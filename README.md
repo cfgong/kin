@@ -1,2 +1,2 @@
 # kin
-EECS 330 Project 
+Relationship Tracker for EECS 330
