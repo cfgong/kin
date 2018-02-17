@@ -5,11 +5,13 @@ body {
 .back-layer-1 {
   /* background-color: grey; */
   color: grey;
-  width: 70%;
+  width: 100%;
+  text-align: center;
 
   /* background-position: center; */
 }
 .back-layer-1 h1 {
+  margin-top: 5%;
   text-align: center;
   color: grey;
 }
@@ -20,8 +22,11 @@ body {
 
 .back-layer-2 {
   background-color: grey; /*should be a darker grye*/
-  border: 1px black;
+  border: 1px solid black;
   color: white;
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 15%
 }
 .group-name {
   float: left;
@@ -33,7 +38,7 @@ body {
 
 .frequency-opt {
   display: inline;
-  border: 1px solid white;
+  border: 1px solid black;
   font-size: 12px;
   padding: 5px;
 }
@@ -43,9 +48,9 @@ body {
   padding-left: 20px;
 }
 .group-frequency {
-  color: white
-  background-color: grey;
-  margin: 20px;
+  color: grey;
+  background-color: white;
+  /* margin: 20px; */
   font-size: 20px;
   text-align: center;
   border: 1px solid white;
@@ -53,7 +58,7 @@ body {
 
 }
 .individual-frequency {
-  margin: 20px;
+  /* margin: 20px; */
   font-size: 20px;
   text-align: center;
   border: 1px solid white;
