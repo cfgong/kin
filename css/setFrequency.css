@@ -64,3 +64,13 @@ body {
   border: 1px solid white;
   padding: 30px;
 }
+
+.next-button {
+  text-align: right;
+}
+.next-button h2 {
+  text-align:right;
+  padding-right: 100px;
+  padding-top: 50px;
+  
+}
