@@ -68,7 +68,7 @@ function addPerson(groupId, addButton){
     
     //adding a remove person button
     var removeButton = document.createElement("BUTTON");
-    removeButton.innerHTML =  "remove this person";
+    removeButton.innerHTML =  "Remove";
     removeButton.onclick = function(){removePerson(groupId, personId);}
     person.appendChild(removeButton);
     

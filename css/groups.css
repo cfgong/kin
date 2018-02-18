@@ -10,6 +10,7 @@ div.group{
     display: inline-block;
     vertical-align: top;
     margin: 5px; 
+    background-color: ivory; 
 }
 div.person{
     background-color: skyblue; 
@@ -23,11 +24,16 @@ input{
 input:not(:hover) { /** formatting when not on hover**/
 	background-color: white; /** formatting button border **/
 }
-
+#add_group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
 #groups{
-    
+    max-height: 90%; 
     display: inline-block;
-    overflow: scroll;
+    overflow: scroll; 
     /**overflow-x: hidden;**/
 
     max-width: 100%;
@@ -36,4 +42,9 @@ input:not(:hover) { /** formatting when not on hover**/
     white-space: nowrap;
 
     **/
+}
+button.next{
+    position: fixed; 
+    bottom: 10%;
+    right: 10%;
 }
