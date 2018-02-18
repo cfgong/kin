@@ -1,0 +1,14 @@
+/**
+overall CSS for everything
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+body, div, button{
+   font-family: 'Nunito', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Rubik', sans-serif;
+    text-align: center; 
+}

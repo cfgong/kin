@@ -1,8 +1,8 @@
-body{
-   
-}
 h1, p{
     text-align: center; 
+}
+button{
+
 }
 div.group{
     border-style: solid; 
@@ -20,9 +20,6 @@ div.person{
 }
 input{
     margin: 10px; 
-}
-input:not(:hover) { /** formatting when not on hover**/
-	background-color: white; /** formatting button border **/
 }
 #add_group{
     display: flex;
