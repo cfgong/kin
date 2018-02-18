@@ -1,9 +1,7 @@
 h1, p{
     text-align: center; 
 }
-button{
 
-}
 div.group{
     border-style: solid; 
     border-color: black; 
@@ -30,7 +28,8 @@ input{
 #groups{
     max-height: 90%; 
     display: inline-block;
-    overflow: scroll; 
+    overflow-x: scroll; 
+    overflow-y: hidden; 
     /**overflow-x: hidden;**/
 
     max-width: 100%;
