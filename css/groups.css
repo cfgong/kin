@@ -1,0 +1,39 @@
+body{
+   
+}
+h1, p{
+    text-align: center; 
+}
+div.group{
+    border-style: solid; 
+    border-color: black; 
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px; 
+}
+div.person{
+    background-color: skyblue; 
+    border-style: solid;
+    border-color: gray;
+    margin: 5px; 
+}
+input{
+    margin: 10px; 
+}
+input:not(:hover) { /** formatting when not on hover**/
+	background-color: white; /** formatting button border **/
+}
+
+#groups{
+    
+    display: inline-block;
+    overflow: scroll;
+    /**overflow-x: hidden;**/
+
+    max-width: 100%;
+    margin: 0 0 1em;
+
+    white-space: nowrap;
+
+    **/
+}
