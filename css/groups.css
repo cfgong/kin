@@ -1,29 +1,30 @@
-h1, p{
-    text-align: center; 
+h1{
+     color: orange; 
 }
-
 div.group{
     border-style: solid; 
     border-color: black; 
     display: inline-block;
     vertical-align: top;
     margin: 5px; 
-    background-color: ivory; 
 }
 div.person{
-    background-color: skyblue; 
-    border-style: solid;
+    background-color: lightgrey; 
+    border-top-style: solid;
+    border-bottom-style:solid; 
     border-color: gray;
+    padding: 10px; 
     margin: 5px; 
 }
 input{
-    margin: 10px; 
+    margin: 0px 10px; 
 }
-#add_group{
+.addButton{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center; 
+    color: orange; 
 }
 #groups{
     max-height: 90%; 
@@ -39,8 +40,8 @@ input{
 
     **/
 }
-button.next{
-    position: fixed; 
-    bottom: 10%;
-    right: 10%;
+.groupTitle{
+    background-color: #4CAF50; 
+    padding: 15px; 
 }
+

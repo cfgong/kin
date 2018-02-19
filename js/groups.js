@@ -13,22 +13,26 @@ function addGroup(){
     group.setAttribute('id', elementId);
     group.setAttribute('person_count', 1);
     
-    //var end = document.getElementById("add_group");
-    //document.body.insertBefore(group, end); //adding group to body
     document.getElementById("groups").append(group);
     //group title
-    addTextField(elementId, "Group: ");
+    groupTitle = document.createElement("DIV");
+    groupTitle.setAttribute("class", "groupTitle");
+    groupTitleId = elementId+"-groupTitle";
+    groupTitle.setAttribute("id", groupTitleId);
+    group.append(groupTitle);
+    addTextField(groupTitleId, "Group Name: ");
     
     var removeButton = document.createElement("BUTTON");
-    removeButton.innerHTML =  "Remove Group";
+    removeButton.innerHTML =  "Remove";
     removeButton.onclick = function(){removeGroup(elementId);}
-    group.appendChild(removeButton);
+    groupTitle.appendChild(removeButton);
     
     //initializing with a single person
     addPerson(elementId); 
     
     //adding one add person button
     var addButton = document.createElement("BUTTON");
+    addButton.setAttribute("class", "addButton");
     addButton.innerHTML =  "Add Person";
     addButton.onclick = function(){addPerson(elementId, addButton);}
     group.appendChild(addButton);
@@ -40,10 +44,10 @@ function addGroup(){
 function addTextField(parentId, labelStr){
     var parent = document.getElementById(parentId);
     
-    document.getElementById(parentId).innerHTML += labelStr;
+   // document.getElementById(parentId).innerHTML += labelStr;
     
     var text = document.createElement("INPUT");
-    text.setAttribute("placeholder",name);
+    text.setAttribute("placeholder", labelStr);
     text.setAttribute("type", "text");
     
     parent.appendChild(text);
@@ -74,10 +78,8 @@ function addPerson(groupId, addButton){
     
     //person_count addition
     group.setAttribute('person_count',p+1);
-    console.log("ADDING"+group.getAttribute("person_count"));
 }
 function removePerson(parentId, personId){
-    console.log("REMOVE"+personId);
     parent = document.getElementById(parentId);
     child = document.getElementById(personId);
     parent.removeChild(child);

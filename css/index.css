@@ -5,10 +5,22 @@ overall CSS for everything
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 
-body, div, button{
+body, div, button, p{
    font-family: 'Nunito', sans-serif;
 }
 h1, h2, h3 {
     font-family: 'Rubik', sans-serif;
     text-align: center; 
+    color: gray; 
+}
+p{
+
+}
+
+.next-button{
+    position: fixed; 
+    bottom: 10%;
+    right: 10%;
+    background-color: #4CAF50;
+    color: white; 
 }
