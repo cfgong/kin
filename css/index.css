@@ -10,20 +10,35 @@ body, div, button, p{
 }
 h1, h2, h3 {
     font-family: 'Rubik', sans-serif;
-    text-align: center; 
-    color: gray; 
+    text-align: center;
+    color: gray;
 }
 p{
 
 }
 
 .next-button{
-    position: fixed; 
+    position: fixed;
     bottom: 10%;
     right: 10%;
     background-color: #4CAF50;
-    color: white; 
-    
+    color: white;
+
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.back-button{
+    position: fixed;;
+    bottom: 10%;
+    left: 10%;
+    background-color: #4CAF50;
+    color: white;
+
   border: none;
   color: white;
   padding: 16px 32px;
