@@ -2,8 +2,10 @@
   <head>
     <title> Kin </title>
     <link rel="stylesheet" type="text/css" href="../css/setFrequency.css"/>
+       <link rel="stylesheet" type="text/css" href="../css/index.css"/>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   </head>
   <body>
     <div class="back-layer-1"> <!--the top headers-->
@@ -12,47 +14,66 @@
          <div class="back-layer-2"> <!-- the next box -->
            <div class="group-frequency"> <!-- group frequency box -->
              <div class="group-name"> Family </div>
-             <div class="frequency-opt-row">
-               <button onclick="group_frequency" class="frequency-opt"> Daily </button>
-               <button onclick="group-frequency" class="frequency-opt"> Weekly </button>
-               <button onclick="group-frequency" class="frequency-opt"> Bi-Weekly </button>
-               <button onclick="group-frequency" class="frequency-opt"> Monthly </button>
-               <button onclick="group-frequency" class="frequency-opt"> Custom </button>
+             <div class="frequency-opt-row" class="btn-group" data-toggle="buttons">
+               <label class="frequency-opt" class="btn btn-primary active">
+                <input type="radio" name="options" id="option1" autocomplete="off"> Daily</label>
+               <label class="frequency-opt" class="btn btn-primary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Weekly </label>
+               <label class="frequency-opt" class="btn btn-primary">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Bi-Weekly</label>
+               <label class="frequency-opt" class="btn btn-primary active">
+                <input type="radio" name="options" id="option4" autocomplete="off"> Monthly</label>
+               <label class="frequency-opt" class="btn btn-primary">
+                <input type="radio" name="options" id="option5" autocomplete="off"> Custom</label>
              </div>
            </div>
            <div class="individual-frequency">
              <div class="individual-name"> Mom </div>
-             <div class="frequency-opt-row">
-               <button onclick="individual_frequency" class="frequency-opt"> Daily </button>
-               <button onclick="individual_frequency" class="frequency-opt"> Weekly </button>
-               <button onclick="individual_frequency" class="frequency-opt"> Bi-Weekly </button>
-               <button onclick="individual_frequency" class="frequency-opt"> Monthly </button>
-               <button onclick="individual_frequency" class="frequency-opt"> Custom </button>
+             <div class="frequency-opt-row" class="btn-group" data-toggle="buttons">
+               <label class="frequency-opt" class="btn btn-primary active">
+                <input type="radio" name="options" id="option1" autocomplete="off"> Daily</label>
+               <label class="frequency-opt" class="btn btn-primary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Weekly </label>
+               <label class="frequency-opt" class="btn btn-primary">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Bi-Weekly</label>
+               <label class="frequency-opt" class="btn btn-primary active">
+                <input type="radio" name="options" id="option4" autocomplete="off"> Monthly</label>
+               <label class="frequency-opt" class="btn btn-primary">
+                <input type="radio" name="options" id="option5" autocomplete="off"> Custom</label>
              </div>
            </div>
            <div class="individual-frequency">
              <div class="individual-name"> Dad </div>
-             <div class="frequency-opt-row">
-               <button onclick="individual_frequency" class="frequency-opt"> Daily </button>
-               <button onclick="individual_frequency" class="frequency-opt"> Weekly </button>
-               <button onclick="individual_frequency" class="frequency-opt"> Bi-Weekly </button>
-               <button onclick="individual_frequency" class="frequency-opt"> Monthly </button>
-               <button onclick="individual_frequency" class="frequency-opt"> Custom </button>
+             <div class="frequency-opt-row" class="btn-group" data-toggle="buttons">
+               <label class="frequency-opt" class="btn btn-primary active">
+                <input type="radio" name="options" id="option1" autocomplete="off"> Daily</label>
+               <label class="frequency-opt" class="btn btn-primary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Weekly </label>
+               <label class="frequency-opt" class="btn btn-primary">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Bi-Weekly</label>
+               <label class="frequency-opt" class="btn btn-primary active">
+                <input type="radio" name="options" id="option4" autocomplete="off"> Monthly</label>
+               <label class="frequency-opt" class="btn btn-primary">
+                <input type="radio" name="options" id="option5" autocomplete="off"> Custom</label>
              </div>
            </div>
            <div class="individual-frequency">
              <div class="individual-name"> Brandon </div>
-             <div class="frequency-opt-row">
-               <button onclick="individual_frequency" class="frequency-opt"> Daily </button>
-               <button onclick="individual_frequency" class="frequency-opt"> Weekly </button>
-               <button onclick="individual_frequency" class="frequency-opt"> Bi-Weekly </button>
-               <button onclick="individual_frequency" class="frequency-opt"> Monthly </button>
-               <button onclick="individual_frequency" class="frequency-opt"> Custom </button>
+             <div class="frequency-opt-row" class="btn-group" data-toggle="buttons">
+               <label class="frequency-opt" class="btn btn-primary active">
+                <input type="radio" name="options" id="option1" autocomplete="off"> Daily</label>
+               <label class="frequency-opt" class="btn btn-primary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Weekly </label>
+               <label class="frequency-opt" class="btn btn-primary">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Bi-Weekly</label>
+               <label class="frequency-opt" class="btn btn-primary active">
+                <input type="radio" name="options" id="option4" autocomplete="off"> Monthly</label>
+               <label class="frequency-opt" class="btn btn-primary">
+                <input type="radio" name="options" id="option5" autocomplete="off"> Custom</label>
              </div>
            </div>
          </div>
-         <div class="next-button">
-          <h2 class="next-button">  Next </h2>
+         <div class="next-button">Next
          </div>
     </div>
   </body>

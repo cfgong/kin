@@ -1,0 +1,38 @@
+
+div.group{
+    border-style: solid; 
+    border-color: black; 
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px; 
+}
+div.person{
+    background-color: lightgrey; 
+    border-top-style: solid;
+    border-bottom-style:solid; 
+    border-color: gray;
+    padding: 10px; 
+    margin: 5px; 
+}
+input{
+    margin: 0px 10px; 
+}
+.addButton{
+    margin: 5px auto; 
+    display: block; 
+}
+#groups{
+    display: inline-block;
+    overflow-x: scroll; 
+    overflow-y: auto; 
+    
+    max-width: 95%;
+    margin: 0 1em;
+
+    white-space: nowrap; 
+}
+.groupTitle{
+    background-color: #4CAF50; 
+    padding: 15px; 
+}
+
