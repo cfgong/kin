@@ -7,6 +7,7 @@ div.group{
     display: inline-block;
     vertical-align: top;
     margin: 5px; 
+    max-height: 90%; 
 }
 div.person{
     background-color: lightgrey; 
@@ -20,21 +21,19 @@ input{
     margin: 0px 10px; 
 }
 .addButton{
-    display: flex;
-    justify-content: center;
-    text-align: center; 
+    margin: auto; 
+    display: block; 
 }
 #groups{
-    max-height: 90%; 
+    height: auto; 
     display: inline-block;
     overflow-x: scroll; 
-    overflow-y: hidden; 
-    /**overflow-x: hidden;**/
-
+    overflow-y: auto; 
+    
     max-width: 100%;
-    margin: 0 0 1em;
+    margin: 0 1em;
 
-    white-space: nowrap;
+    white-space: nowrap; 
 
     **/
 }
