@@ -14,67 +14,69 @@
          <div class="back-layer-2"> <!-- the next box -->
            <div class="group-frequency"> <!-- group frequency box -->
              <div class="group-name"> Family </div>
-             <div class="frequency-opt-row" class="btn-group" data-toggle="buttons">
+             <form class="frequency-opt-row" id ="options1" class="btn-group" data-toggle="buttons">
                <label class="frequency-opt" class="btn btn-primary active">
-                <input type="checkbox" name="options" id="option1" autocomplete="off"> Daily</label>
+                <input type="radio" name="options1" autocomplete="off" onclick="disableIndividual();"> Daily</label>
                <label class="frequency-opt" class="btn btn-primary">
-                <input type="checkbox" name="options" id="option2" autocomplete="off"> Weekly </label>
+                <input type="radio" name="options1" autocomplete="off" onclick="disableIndividual();"> Weekly </label>
                <label class="frequency-opt" class="btn btn-primary">
-                <input type="checkbox" name="options" id="option3" autocomplete="off"> Bi-Weekly</label>
+                <input type="radio" name="options1" autocomplete="off" onclick="disableIndividual();"> Bi-Weekly</label>
                <label class="frequency-opt" class="btn btn-primary active">
-                <input type="checkbox" name="options" id="option4" autocomplete="off"> Monthly</label>
+                <input type="radio" name="options1" autocomplete="off" onclick="disableIndividual();"> Monthly</label>
                <label class="frequency-opt" class="btn btn-primary">
-                <input type="checkbox" name="options" id="option5" autocomplete="off"> Custom</label>
-             </div>
+                <input type="radio" name="options1" autocomplete="off" onclick="disableIndividual();"> Custom</label>
+             </form>
            </div>
            <div class="individual-frequency">
              <div class="individual-name"> Mom </div>
-             <div class="frequency-opt-row" class="btn-group" data-toggle="buttons">
+             <form class="frequency-opt-row" class="individual" id = "options2" class="btn-group" data-toggle="buttons">
                <label class="frequency-opt" class="btn btn-primary active">
-                <input type="checkbox" name="options" id="option1" autocomplete="off"> Daily</label>
+                <input type="radio" name="options2" autocomplete="off" class = "individualRadio"> Daily</label>
                <label class="frequency-opt" class="btn btn-primary">
-                <input type="checkbox" name="options" id="option2" autocomplete="off"> Weekly </label>
+                <input type="radio" name="options2" autocomplete="off" class = "individualRadio"> Weekly </label>
                <label class="frequency-opt" class="btn btn-primary">
-                <input type="checkbox" name="options" id="option3" autocomplete="off"> Bi-Weekly</label>
+                <input type="radio" name="options2" autocomplete="off" class = "individualRadio"> Bi-Weekly</label>
                <label class="frequency-opt" class="btn btn-primary active">
-                <input type="checkbox" name="options" id="option4" autocomplete="off"> Monthly</label>
+                <input type="radio" name="options2" autocomplete="off" class = "individualRadio"> Monthly</label>
                <label class="frequency-opt" class="btn btn-primary">
-                <input type="checkbox" name="options" id="option5" autocomplete="off"> Custom</label>
-             </div>
+                <input type="radio" name="options2" autocomplete="off" class = "individualRadio"> Custom</label>
+             </form>
            </div>
            <div class="individual-frequency">
              <div class="individual-name"> Dad </div>
-             <div class="frequency-opt-row" class="btn-group" data-toggle="buttons">
+             <form class="frequency-opt-row" class="individual" id = "options3" class="btn-group" data-toggle="buttons">
                <label class="frequency-opt" class="btn btn-primary active">
-                <input type="checkbox" name="options" id="option1" autocomplete="off"> Daily</label>
+                <input type="radio" name="options3" autocomplete="off" class = "individualRadio"> Daily</label>
                <label class="frequency-opt" class="btn btn-primary">
-                <input type="checkbox" name="options" id="option2" autocomplete="off"> Weekly </label>
+                <input type="radio" name="options3" autocomplete="off" class = "individualRadio"> Weekly </label>
                <label class="frequency-opt" class="btn btn-primary">
-                <input type="checkbox" name="options" id="option3" autocomplete="off"> Bi-Weekly</label>
+                <input type="radio" name="options3" autocomplete="off" class = "individualRadio"> Bi-Weekly</label>
                <label class="frequency-opt" class="btn btn-primary active">
-                <input type="checkbox" name="options" id="option4" autocomplete="off"> Monthly</label>
+                <input type="radio" name="options3" autocomplete="off" class = "individualRadio"> Monthly</label>
                <label class="frequency-opt" class="btn btn-primary">
-                <input type="checkbox" name="options" id="option5" autocomplete="off"> Custom</label>
-             </div>
+                <input type="radio" name="options3" autocomplete="off" class = "individualRadio"> Custom</label>
+             </form>
            </div>
            <div class="individual-frequency">
              <div class="individual-name"> Brandon </div>
-             <div class="frequency-opt-row" class="btn-group" data-toggle="buttons">
+             <form class="frequency-opt-row" class="individual" id="options4" class="btn-group" data-toggle="buttons">
                <label class="frequency-opt" class="btn btn-primary active">
-                <input type="checkbox" name="options" id="option1" autocomplete="off"> Daily</label>
+                <input type="radio" name="options4" autocomplete="off" class = "individualRadio"> Daily</label>
                <label class="frequency-opt" class="btn btn-primary">
-                <input type="checkbox" name="options" id="option2" autocomplete="off"> Weekly </label>
+                <input type="radio" name="options4" autocomplete="off" class = "individualRadio"> Weekly </label>
                <label class="frequency-opt" class="btn btn-primary">
-                <input type="checkbox" name="options" id="option3" autocomplete="off"> Bi-Weekly</label>
+                <input type="radio" name="options4" autocomplete="off" class = "individualRadio"> Bi-Weekly</label>
                <label class="frequency-opt" class="btn btn-primary active">
-                <input type="checkbox" name="options" id="option4" autocomplete="off"> Monthly</label>
+                <input type="radio" name="options4" autocomplete="off" class = "individualRadio"> Monthly</label>
                <label class="frequency-opt" class="btn btn-primary">
-                <input type="checkbox" name="options" id="option5" autocomplete="off"> Custom</label>
-             </div>
+                <input type="radio" name="options4" autocomplete="off" class = "individualRadio"> Custom</label>
+             </form>
            </div>
          </div>
          <div class="next-button">Next
          </div>
     </div>
+       <script src="../js/setFrequency.js"></script>
+
   </body>
 </html>
