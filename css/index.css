@@ -20,7 +20,7 @@ p{
 .next-button{
     position: fixed;
     bottom: 10%;
-    right: 10%;
+    right: 5%;
     background-color: #4CAF50;
     color: white;
 
@@ -35,7 +35,7 @@ p{
 .back-button{
     position: fixed;;
     bottom: 10%;
-    left: 10%;
+    left: 5%;
     background-color: #4CAF50;
     color: white;
 
