@@ -1,13 +1,10 @@
-h1{
-     color: orange; 
-}
+
 div.group{
     border-style: solid; 
     border-color: black; 
     display: inline-block;
     vertical-align: top;
     margin: 5px; 
-    max-height: 90%; 
 }
 div.person{
     background-color: lightgrey; 
@@ -21,21 +18,18 @@ input{
     margin: 0px 10px; 
 }
 .addButton{
-    margin: auto; 
+    margin: 5px auto; 
     display: block; 
 }
 #groups{
-    height: auto; 
     display: inline-block;
     overflow-x: scroll; 
     overflow-y: auto; 
     
-    max-width: 100%;
+    max-width: 95%;
     margin: 0 1em;
 
     white-space: nowrap; 
-
-    **/
 }
 .groupTitle{
     background-color: #4CAF50; 
