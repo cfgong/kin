@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box
+}
+
+h1 {
+  margin-top: 5%;
+  text-align: center;
+  color: grey;
+  font-family: 'Nunito'
+}
+
+h3 {
+  text-align: center;
+  color: grey;
+  font-family: 'Nunito'
+}
+
+.application_box {
+  margin-bottom: 3%;
+  width: 100%;
+  display: inline-block;
+
+}
+
+
+
+#facebookmessenger{
+  width: 250px;
+  float: left;
+  margin-left: 30%;
+  width: 150px;
+  height: 75px;
+  border: 3px solid #73AD21;
+}
+
+#phone{
+  width: 250px;
+  margin-left: 2%;
+  float: left;
+  width: 150px;
+  height: 75px;
+  border: 3px solid #73AD21;
+}
+#Whatsapp{
+  width: 250px;
+  margin-left: 2%;
+  float: left;
+  width: 150px;
+  height: 75px;
+  border: 3px solid #73AD21;
+}
+#Slack{
+  width: 250px;
+  margin-left: 30%;
+  float: left;
+  width: 150px;
+  height: 75px;
+  border: 3px solid #73AD21;
+}
+#Wechat{
+  width: 250px;
+  margin-left: 2%;
+  float: left;
+  width: 150px;
+  height: 75px;
+  border: 3px solid #73AD21;
+}
+#email{
+  width: 250px;
+  margin-left: 2%;
+  float: left;
+  width: 150px;
+  height: 75px;
+  border: 3px solid #73AD21;
+}
