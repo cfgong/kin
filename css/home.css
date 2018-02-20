@@ -1,3 +1,4 @@
+
 div.group{
     border-style: solid; 
     border-color: black; 
@@ -16,19 +17,14 @@ div.person{
 input{
     margin: 0px 10px; 
 }
-.addButton{
-    margin: 5px auto; 
-    display: block; 
+#healthBar{
+    display: inline-block;
+    float: left; 
 }
 #groups{
+    border-style: solid; 
     display: inline-block;
-    overflow-x: scroll; 
-    overflow-y: auto; 
-    
-    max-width: 95%;
-    margin: 0 1em;
-
-    white-space: nowrap; 
+    float: right; 
 }
 .groupTitle{
     background-color: #4CAF50; 
