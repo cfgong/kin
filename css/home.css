@@ -1,3 +1,5 @@
+@import "index.css";
+@import url("index.css");
 
 div.group{
     /**border-style: solid; 
@@ -23,10 +25,12 @@ div.group{
 .groupTitle{
     text-align: center; 
 }
-img{
+.proPic{
     width: 100px;
     height: 100px; 
     display: block;
     margin: 0 auto; 
+    border-radius: 50%; 
 }
+
 

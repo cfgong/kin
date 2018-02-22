@@ -4,7 +4,9 @@ overall CSS for everything
 
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Rubik');
-
+:root{
+    --color1: #78909C; 
+}
 body, div, button, p{
    font-family: 'Nunito', sans-serif;
 }
@@ -16,7 +18,7 @@ h1{
 }
 h2, h3, h4{
     font-family: 'Nunito', sans-serif;
-    color: #78909C; 
+    color: var(--color1); 
     text-align: center; 
 }
 
@@ -24,7 +26,7 @@ h2, h3, h4{
     position: fixed;
     bottom: 10%;
     right: 5%;
-    background-color: #78909C;
+    background-color: var(--color1);
     color: white;
 
   border: none;
@@ -39,7 +41,7 @@ h2, h3, h4{
     position: fixed;;
     bottom: 10%;
     left: 5%;
-    background-color: #78909C;
+    background-color: var(--color1);
     color: white;
 
   border: none;

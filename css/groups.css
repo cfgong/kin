@@ -1,3 +1,5 @@
+@import "index.css";
+@import url("index.css");
 div.group{
     border-style: solid; 
     border-color: black; 
@@ -6,7 +8,7 @@ div.group{
     margin: 5px; 
 }
 div.person{
-    background-color: lightgrey; 
+    background-color: var(--color1); 
     border-top-style: solid;
     border-bottom-style:solid; 
     border-color: gray;
