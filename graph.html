@@ -1,62 +1,63 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Graph 3D demo</title>
-
-  <style>
-    body {font: 10pt arial;}
-  </style>
+  <title>Network | Basic usage</title>
 
   <script type="text/javascript" src="js/vis.js"></script>
+  <link href="../js/vis.js" rel="stylesheet" type="text/css" />
 
-  <script type="text/javascript">
-  var data = null;
-  var graph = null;
-
-  function custom(x, y) {
-    return (Math.sin(x/50) * Math.cos(y/50) * 50 + 50);
-  }
-
-  // Called when the Visualization API is loaded.
-  function drawVisualization() {
-    // Create and populate a data table.
-    var data = new vis.DataSet();
-    // create some nice looking data with sin/cos
-    var steps = 50;  // number of datapoints will be steps*steps
-    var axisMax = 314;
-    var axisStep = axisMax / steps;
-    for (var x = 0; x < axisMax; x+=axisStep) {
-      for (var y = 0; y < axisMax; y+=axisStep) {
-        var value = custom(x, y);
-        data.add({
-          x: x,
-          y: y,
-          z: value,
-          style: value
-        });
-      }
+  <style type="text/css">
+    #mynetwork {
+      width: 600px;
+      height: 400px;
+      border: 1px solid lightgray;
     }
-
-    // specify options
-    var options = {
-      width:  '600px',
-      height: '600px',
-      style: 'surface',
-      showPerspective: true,
-      showGrid: true,
-      showShadow: false,
-      keepAspectRatio: true,
-      verticalRatio: 0.5
-    };
-
-    // create a graph3d
-    var container = document.getElementById('mygraph');
-    graph3d = new vis.Graph3d(container, data, options);
-  }
-  </script>
+  </style>
 </head>
+<body>
 
-<body onload="drawVisualization();">
-  <div id="mygraph"></div>
+<p>
+  Create a simple network with some nodes and edges.
+</p>
+
+<div id="mynetwork"></div>
+
+<script type="text/javascript">
+  // create an array with nodes
+  var nodes = new vis.DataSet([
+    {id: 1, borderWidth: 3, label: 'Me'},
+    {id: 2, label: 'Family'},
+    {id: 3, label: 'High School Pals'},
+    {id: 4, label: 'Coworkers'},
+    {id: 5, label: 'Mom'},
+    {id: 6, label: 'Dad'},
+    {id: 7, label: 'Todd'},
+    {id: 8, label: 'David'},
+    {id: 9, label: 'Will'},
+  ]);
+
+  // create an array with edges
+  var edges = new vis.DataSet([
+    {from: 1, to: 3},
+    {from: 1, to: 2},
+    {from: 1, to: 4},
+    {from: 2, to: 5},
+    {from: 2, to: 6},
+    {from: 2, to: 7},
+    {from: 3, to: 8},
+    {from: 3, to: 9}
+  ]);
+
+  // create a network
+  var container = document.getElementById('mynetwork');
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+  var options = {};
+  var network = new vis.Network(container, data, options);
+</script>
+
+
 </body>
 </html>
