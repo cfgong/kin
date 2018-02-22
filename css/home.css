@@ -1,0 +1,36 @@
+@import "index.css";
+@import url("index.css");
+
+div.group{
+    /**border-style: solid; 
+    border-color: black; **/
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px; 
+    background-color: #FFECB3;
+}
+#healthBar{
+    display: inline-block;
+    float: left; 
+}
+#groups{
+    border-style: solid; 
+    border-color: #FFA000; 
+    display: inline-block;
+    float: right; 
+    width: 590px;
+    height: 180px; 
+    background-color: #FFC107;
+}
+.groupTitle{
+    text-align: center; 
+}
+.proPic{
+    width: 100px;
+    height: 100px; 
+    display: block;
+    margin: 0 auto; 
+    border-radius: 50%; 
+}
+
+
