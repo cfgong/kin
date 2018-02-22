@@ -1,7 +1,6 @@
-var groupId = 0; 
-var groupCount = 0; 
+var people = ["Victor", "Nathan", "Jessica", "Kerui", "Hannah", "Bob"];
+var images = []
 
-var personHtml= ''; 
 function init(){
     document.getElementById("groups").innerHTML = "Status Bar <br>";
     for (var i =0; i<3; i++){
@@ -25,11 +24,6 @@ function addGroup(){
     groupTitle.setAttribute("id", groupTitleId);
     group.append(groupTitle);
     addTextField(groupTitleId, "Group Name: ");
-    
-    var removeButton = document.createElement("BUTTON");
-    removeButton.innerHTML =  "Remove";
-    removeButton.onclick = function(){removeGroup(elementId);}
-    groupTitle.appendChild(removeButton);
     
     //initializing with a single person
     addPerson(elementId); 

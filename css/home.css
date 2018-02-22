@@ -30,4 +30,8 @@ input{
     background-color: #4CAF50; 
     padding: 15px; 
 }
+img{
+    width: 100px;
+    height: 100px; 
+}
 

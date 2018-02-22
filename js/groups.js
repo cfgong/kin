@@ -1,7 +1,6 @@
 var groupId = 0; 
 var groupCount = 0; 
 
-var personHtml= ''; 
 function init(){
     addGroup();
 };
