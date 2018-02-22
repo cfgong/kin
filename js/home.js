@@ -11,7 +11,15 @@ function init(){
       console.log(images[i]);
   }
     max = images.length; 
-    document.getElementById("groups").innerHTML = "Status Bar <br>";
+    
+    var groupTitle = document.createElement("div");
+    groupTitle.setAttribute('class', "groupTitle");
+    groupTitle.innerHTML = "Status Bar";
+    var groupId = "group"+i;
+    groupTitle.setAttribute('id', groupId);
+    
+    document.getElementById("groups").append(groupTitle);
+    
     lastPerson = 4; 
     for (var i =0; i<lastPerson; i++){
         addPerson(i);
@@ -37,7 +45,7 @@ function addPerson(i){
     img = document.createElement("img");
     img.setAttribute("src", images[i]);
     group.append(img);
-    group.innerHTML+="<br>";
+    //group.innerHTML+="<br>";
     
     //adding a remove person button
     var removeButton = document.createElement("BUTTON");
