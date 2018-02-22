@@ -1,37 +1,62 @@
+function init(){
+  document.getElementById('group_daily').style.background = "white";
+  document.getElementById('group_custom').style.background = "white";
+  document.getElementById('group_weekly').style.background = "white";
+  document.getElementById('group_monthly').style.background = "white";
+  document.getElementById('group_biWeekly').style.background = "white";
+  // document.getElementById('2').style.background = "white";
+  // document.getElementById('7').style.background = "white";
+  // document.getElementById('12').style.background = "white";
+  // document.getElementById('1').style.background = "white";
+  // document.getElementById('3').style.background = "white";
+  // document.getElementById('4').style.background = "white";
+  // document.getElementById('5').style.background = "white";
+  // document.getElementById('6').style.background = "white";
+  // document.getElementById('8').style.background = "white";
+  // document.getElementById('9').style.background = "white";
+  // document.getElementById('10').style.background = "white";
+  // document.getElementById('11').style.background = "white";
+  // document.getElementById('13').style.background = "white";
+  // document.getElementById('14').style.background = "white";
+  // document.getElementById('15').style.background = "white";
+}
+
 function disableIndividual(){
      $(".individual_frequency").prop("disabled", true); //
 }
 
 function group_daily() {
-  console.log(document.getElementById('group_daily').style.background);
+  //console.log(document.getElementById('group_daily').style.background);
   if (document.getElementById('group_daily').style.background == "white") {
-    document.getElementById('group_daily').style.background = "#FFC107"
-    document.getElementById('1').style.background = "#FFC107"
-    document.getElementById('6').style.background = "#FFC107"
-    document.getElementById('11').style.background = "#FFC107"
-    document.getElementById('2').style.background = "white"
-    document.getElementById('3').style.background = "white"
-    document.getElementById('4').style.background = "white"
-    document.getElementById('5').style.background = "white"
-    document.getElementById('7').style.background = "white"
-    document.getElementById('8').style.background = "white"
-    document.getElementById('9').style.background = "white"
-    document.getElementById('10').style.background = "white"
-    document.getElementById('12').style.background = "white"
-    document.getElementById('13').style.background = "white"
-    document.getElementById('14').style.background = "white"
-    document.getElementById('15').style.background = "white"
-    document.getElementById('group_custom').style.background = "white"
-    document.getElementById('group_weekly').style.background = "white"
-    document.getElementById('group_monthly').style.background = "white"
-    document.getElementById('group_biWeekly').style.background = "white"
+    //console.log(document.getElementById('group_daily').style.background);
+    document.getElementById('group_daily').style.background = "#FFC107";
+    document.getElementById('1').style.background = "#FFC107";
+    document.getElementById('6').style.background = "#FFC107";
+    document.getElementById('11').style.background = "#FFC107";
+    document.getElementById('2').style.background = "white";
+    document.getElementById('3').style.background = "white";
+    document.getElementById('4').style.background = "white";
+    document.getElementById('5').style.background = "white";
+    document.getElementById('7').style.background = "white";
+    document.getElementById('8').style.background = "white";
+    document.getElementById('9').style.background = "white";
+    document.getElementById('10').style.background = "white";
+    document.getElementById('12').style.background = "white";
+    document.getElementById('13').style.background = "white";
+    document.getElementById('14').style.background = "white";
+    document.getElementById('15').style.background = "white";
+    document.getElementById('group_custom').style.background = "white";
+    document.getElementById('group_weekly').style.background = "white";
+    document.getElementById('group_monthly').style.background = "white";
+    document.getElementById('group_biWeekly').style.background = "white";
 
     // console.log(document.getElementById('group_daily').style.background);
   } else {
-    document.getElementById('group_daily').style.background = "white"
-    document.getElementById('1').style.background = "white"
-    document.getElementById('6').style.background = "white"
-    document.getElementById('11').style.background = "white"
+    console.log("hello");
+    document.getElementById('group_daily').style.background = "white";
+    document.getElementById('1').style.background = "white";
+    document.getElementById('6').style.background = "white";
+    document.getElementById('11').style.background = "white";
 
   }
   //need to figure out how to disable
@@ -39,31 +64,31 @@ function group_daily() {
 
 function group_weekly() {
   if (document.getElementById('group_weekly').style.background == "white") {
-    document.getElementById('group_weekly').style.background = "#FFC107"
-    document.getElementById('2').style.background = "#FFC107"
-    document.getElementById('7').style.background = "#FFC107"
-    document.getElementById('12').style.background = "#FFC107"
-    document.getElementById('1').style.background = "white"
-    document.getElementById('3').style.background = "white"
-    document.getElementById('4').style.background = "white"
-    document.getElementById('5').style.background = "white"
-    document.getElementById('6').style.background = "white"
-    document.getElementById('8').style.background = "white"
-    document.getElementById('9').style.background = "white"
-    document.getElementById('10').style.background = "white"
-    document.getElementById('11').style.background = "white"
-    document.getElementById('13').style.background = "white"
-    document.getElementById('14').style.background = "white"
-    document.getElementById('15').style.background = "white"
-    document.getElementById('group_custom').style.background = "white"
-    document.getElementById('group_daily').style.background = "white"
-    document.getElementById('group_monthly').style.background = "white"
-    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_weekly').style.background = "#FFC107";
+    document.getElementById('2').style.background = "#FFC107";
+    document.getElementById('7').style.background = "#FFC107";
+    document.getElementById('12').style.background = "#FFC107";
+    document.getElementById('1').style.background = "white";
+    document.getElementById('3').style.background = "white";
+    document.getElementById('4').style.background = "white";
+    document.getElementById('5').style.background = "white";
+    document.getElementById('6').style.background = "white";
+    document.getElementById('8').style.background = "white";
+    document.getElementById('9').style.background = "white";
+    document.getElementById('10').style.background = "white";
+    document.getElementById('11').style.background = "white";
+    document.getElementById('13').style.background = "white";
+    document.getElementById('14').style.background = "white";
+    document.getElementById('15').style.background = "white";
+    document.getElementById('group_custom').style.background = "white";
+    document.getElementById('group_daily').style.background = "white";
+    document.getElementById('group_monthly').style.background = "white";
+    document.getElementById('group_biWeekly').style.background = "white";
   } else {
-    document.getElementById('group_weekly').style.background = "white"
-    document.getElementById('2').style.background = "white"
-    document.getElementById('7').style.background = "white"
-    document.getElementById('12').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white";
+    document.getElementById('2').style.background = "white";
+    document.getElementById('7').style.background = "white";
+    document.getElementById('12').style.background = "white";
   }
 }
 
@@ -278,3 +303,4 @@ function bran_custom() {
   document.getElementById('14').style.background = "white"
   document.getElementById('11').style.background = "white"
 }
+init();

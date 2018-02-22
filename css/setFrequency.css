@@ -37,13 +37,14 @@ body {
   font-size: 16px;
   padding: 5px;
   font-family: 'Nunito';
-  background-color: #ECEFF1;
+  background-color: white; /*ECEFF1*/
 }
 .frequency-opt-row {
   /* float: right; */
   display: inline-block;
   padding-left: 20px;
 }
+
 .group-frequency {
   color: #78909C;
   background-color: white;
