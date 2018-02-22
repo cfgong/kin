@@ -1,5 +1,7 @@
 var people = ["Victor", "Nathan", "Kaetlyn", "Kristi", "Michelle", "Bradie", "Vincent", "Karen", "Kaori", "Evegenia"];
 var images = [];
+var status_ = [];
+var days = [];
 var lastPerson = 0; 
 var max = 0; 
 
@@ -8,9 +10,22 @@ function init(){
   for (var i = 0; i < people.length; i++){
     var t = "img/image" + i + ".jpg";
     images.push(t);
-      console.log(images[i]);
   }
     max = images.length; 
+    //populating status list
+   for (var i = 0; i < 3; i++){
+    var t = "overdue";
+    status_.push(t);
+  } 
+    for (var i = 3; i < people.length; i++){
+    var t = "upcoming";
+    status_.push(t);
+  } 
+    
+    //populating days list
+    for (var i = -3; i < people.length; i++){
+    days.push(Math.abs(i));
+  } 
     
     var groupTitle = document.createElement("div");
     groupTitle.setAttribute('class', "groupTitle");
@@ -31,8 +46,26 @@ function addPerson(i){
     group.setAttribute('class', "group");
     var groupId = "group"+i;
     group.setAttribute('id', groupId);
-    
     document.getElementById("groups").append(group);
+    //adding the status bar
+    
+    groupStatus= document.createElement("DIV");
+    //groupStatus.setAttribute("class", "groupTitle");
+    groupStatus.innerHTML = status_[i];
+    group.append(groupStatus);
+    
+    groupDays= document.createElement("DIV");
+    //groupStatus.setAttribute("class", "groupTitle");
+    groupDays.innerHTML = days[i]+" days";
+    group.append(groupDays);
+    
+    //adding an image 
+    img = document.createElement("img");
+    img.setAttribute("src", images[i]);
+    img.setAttribute("class", "proPic");
+    group.append(img);
+    //group.innerHTML+="<br>";
+    
     //group title
     groupTitle = document.createElement("DIV");
     groupTitle.setAttribute("class", "groupTitle");
@@ -41,11 +74,7 @@ function addPerson(i){
     groupTitle.innerHTML = people[i];
     group.append(groupTitle);
     
-    //adding an image 
-    img = document.createElement("img");
-    img.setAttribute("src", images[i]);
-    group.append(img);
-    //group.innerHTML+="<br>";
+    
     
     //adding a remove person button
     var removeButton = document.createElement("BUTTON");
