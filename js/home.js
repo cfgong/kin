@@ -1,85 +1,76 @@
-var people = ["Victor", "Nathan", "Jessica", "Kerui", "Hannah", "Bob"];
-var images = []
+var people = ["Victor", "Nathan", "Kaetlyn", "Kristi", "Michelle", "Bradie", "Vincent", "Karen", "Kaori", "Evegenia"];
+var images = [];
+var lastPerson = 0; 
+var max = 0; 
 
 function init(){
+    //populating images list
+  for (var i = 0; i < people.length; i++){
+    var t = "img/image" + i + ".jpg";
+    images.push(t);
+      console.log(images[i]);
+  }
+    max = images.length; 
     document.getElementById("groups").innerHTML = "Status Bar <br>";
-    for (var i =0; i<3; i++){
-        addGroup();
+    lastPerson = 4; 
+    for (var i =0; i<lastPerson; i++){
+        addPerson(i);
     }
     
 };
-function addGroup(){
-    var elementId = "group-"+groupId;
-
+function addPerson(i){
     var group = document.createElement("div");
     group.setAttribute('class', "group");
-    group.setAttribute('id', elementId);
-    group.setAttribute('person_count', 1);
+    var groupId = "group"+i;
+    group.setAttribute('id', groupId);
     
     document.getElementById("groups").append(group);
     //group title
     groupTitle = document.createElement("DIV");
     groupTitle.setAttribute("class", "groupTitle");
-    groupTitleId = elementId+"-groupTitle";
+    groupTitleId = "groupTitle"+i;
     groupTitle.setAttribute("id", groupTitleId);
+    groupTitle.innerHTML = people[i];
     group.append(groupTitle);
-    addTextField(groupTitleId, "Group Name: ");
     
-    //initializing with a single person
-    addPerson(elementId); 
-    
-    groupId++; 
-    groupCount++;
-    
-}
-function addTextField(parentId, labelStr){
-    var parent = document.getElementById(parentId);
-    
-   // document.getElementById(parentId).innerHTML += labelStr;
-    
-    var text = document.createElement("INPUT");
-    text.setAttribute("placeholder", labelStr);
-    text.setAttribute("type", "text");
-    
-    parent.appendChild(text);
-}
-function addPerson(groupId, addButton){
-    var group = document.getElementById(groupId);
-    var p = parseInt(group.getAttribute('person_count'));
-    var personId = groupId+"person-"+p; 
-    
-    //Person Div
-    var person = document.createElement("DIV");
-    person.setAttribute("class", "person"); 
-    person.setAttribute("id", personId); 
-    group.append(person);
-    
-    //Person Name field
-    addTextField(personId,"Name: ");
-    person.innerHTML += "<br>";
-    
-    //Person Relationship Field 
-    addTextField(personId,"Relationship: ");
+    //adding an image 
+    img = document.createElement("img");
+    img.setAttribute("src", images[i]);
+    group.append(img);
+    group.innerHTML+="<br>";
     
     //adding a remove person button
     var removeButton = document.createElement("BUTTON");
     removeButton.innerHTML =  "Remove";
-    removeButton.onclick = function(){removePerson(groupId, personId);}
-    person.appendChild(removeButton);
+    removeButton.onclick = function(){removeGroup(groupId, lastPerson);}
+    group.appendChild(removeButton);
+    
+    //adding a postpone button
+    var removeButton = document.createElement("BUTTON");
+    removeButton.innerHTML =  "Postpone";
+    removeButton.onclick = function(){postponeGroup(groupId, lastPerson);}
+    group.appendChild(removeButton);  
 }
-function removePerson(parentId, personId){
-    parent = document.getElementById(parentId);
-    child = document.getElementById(personId);
-    parent.removeChild(child);
-}
-function removeGroup(elementId){
-    removeElement(elementId);
-    groupCount--;
-}
-
-function removeElement(elementId) {
+function removeGroup(elementId, i){
     element = document.getElementById(elementId);
     element.remove(elementId);
+    /**
+    if (lastPerson >= max){
+        lastPerson = 0; 
+    }
+    addPerson(lastPerson);
+    lastPerson++;
+    **/
+    if (lastPerson<max){
+        addPerson(lastPerson);
+        lastPerson++;
+    }
 }
+function postponeGroup(elementId, i){
+    prompt('Specify the number of days to postpone', 1);
+    removeGroup(elementId, i);
+}
+
+
 
 init();

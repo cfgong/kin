@@ -5,6 +5,7 @@ div.group{
     display: inline-block;
     vertical-align: top;
     margin: 5px; 
+    
 }
 div.person{
     background-color: lightgrey; 
@@ -25,13 +26,18 @@ input{
     border-style: solid; 
     display: inline-block;
     float: right; 
+    width: 610px;
+    height: 230px; 
 }
 .groupTitle{
     background-color: #4CAF50; 
     padding: 15px; 
+    text-align: center; 
 }
 img{
     width: 100px;
     height: 100px; 
+    display: block;
+    margin: 0 auto; 
 }
 
