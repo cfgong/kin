@@ -16,9 +16,8 @@ div.group{
     border-color: #FFA000; 
     display: inline-block;
     float: right; 
-    width: 610px;
-    height: 190px; 
-    text-align:center; 
+    width: 590px;
+    height: 180px; 
     background-color: #FFC107;
 }
 .groupTitle{
