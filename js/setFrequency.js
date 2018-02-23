@@ -190,6 +190,13 @@ function mom_daily() {
   document.getElementById('3').style.background = "white"
   document.getElementById('4').style.background = "white"
   document.getElementById('5').style.background = "white"
+  if(document.getElementById('group_daily').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 
 function mom_weekly() {
@@ -198,6 +205,13 @@ function mom_weekly() {
   document.getElementById('3').style.background = "white"
   document.getElementById('4').style.background = "white"
   document.getElementById('5').style.background = "white"
+  if(document.getElementById('group_weekly').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 
 function mom_biWeekly() {
@@ -206,6 +220,13 @@ function mom_biWeekly() {
   document.getElementById('1').style.background = "white"
   document.getElementById('4').style.background = "white"
   document.getElementById('5').style.background = "white"
+  if(document.getElementById('group_biWeekly').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 
 function mom_monthly() {
@@ -214,6 +235,13 @@ function mom_monthly() {
   document.getElementById('3').style.background = "white"
   document.getElementById('1').style.background = "white"
   document.getElementById('5').style.background = "white"
+  if(document.getElementById('group_monthly').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 
 function mom_custom() {
@@ -222,6 +250,13 @@ function mom_custom() {
   document.getElementById('3').style.background = "white"
   document.getElementById('4').style.background = "white"
   document.getElementById('1').style.background = "white"
+  if(document.getElementById('group_custom').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 
 function dad_daily() {
@@ -230,6 +265,13 @@ function dad_daily() {
   document.getElementById('8').style.background = "white"
   document.getElementById('9').style.background = "white"
   document.getElementById('10').style.background = "white"
+  if(document.getElementById('group_daily').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 
 function dad_weekly() {
@@ -238,6 +280,13 @@ function dad_weekly() {
   document.getElementById('8').style.background = "white"
   document.getElementById('9').style.background = "white"
   document.getElementById('10').style.background = "white"
+  if(document.getElementById('group_weekly').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 
 function dad_biWeekly() {
@@ -246,6 +295,13 @@ function dad_biWeekly() {
   document.getElementById('6').style.background = "white"
   document.getElementById('9').style.background = "white"
   document.getElementById('10').style.background = "white"
+  if(document.getElementById('group_biWeekly').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 
 function dad_monthly() {
@@ -254,6 +310,13 @@ function dad_monthly() {
   document.getElementById('8').style.background = "white"
   document.getElementById('6').style.background = "white"
   document.getElementById('10').style.background = "white"
+  if(document.getElementById('group_monthly').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 
 function dad_custom() {
@@ -262,6 +325,13 @@ function dad_custom() {
   document.getElementById('8').style.background = "white"
   document.getElementById('9').style.background = "white"
   document.getElementById('6').style.background = "white"
+  if(document.getElementById('group_custom').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 
 function bran_daily() {
@@ -270,6 +340,13 @@ function bran_daily() {
   document.getElementById('13').style.background = "white"
   document.getElementById('14').style.background = "white"
   document.getElementById('15').style.background = "white"
+  if(document.getElementById('group_daily').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 
 function bran_weekly() {
@@ -278,6 +355,13 @@ function bran_weekly() {
   document.getElementById('13').style.background = "white"
   document.getElementById('14').style.background = "white"
   document.getElementById('15').style.background = "white"
+  if(document.getElementById('group_weekly').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 
 function bran_biWeekly() {
@@ -286,6 +370,13 @@ function bran_biWeekly() {
   document.getElementById('11').style.background = "white"
   document.getElementById('14').style.background = "white"
   document.getElementById('15').style.background = "white"
+  if(document.getElementById('group_biWeekly').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 
 function bran_monthly() {
@@ -294,6 +385,13 @@ function bran_monthly() {
   document.getElementById('13').style.background = "white"
   document.getElementById('11').style.background = "white"
   document.getElementById('15').style.background = "white"
+  if(document.getElementById('group_monthly').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 
 function bran_custom() {
@@ -302,5 +400,12 @@ function bran_custom() {
   document.getElementById('13').style.background = "white"
   document.getElementById('14').style.background = "white"
   document.getElementById('11').style.background = "white"
+  if(document.getElementById('group_custom').style.background != "#FFC107"){
+    document.getElementById('group_custom').style.background = "white"
+    document.getElementById('group_weekly').style.background = "white"
+    document.getElementById('group_biWeekly').style.background = "white"
+    document.getElementById('group_daily').style.background = "white"
+    document.getElementById('group_monthly').style.background = "white"
+  }
 }
 init();
