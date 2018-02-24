@@ -10,10 +10,6 @@ div.group{
     background-color: #FFECB3;
 }
 #healthBar{
-<<<<<<< HEAD
-    display: inline-block;
-    float: left;
-=======
   margin-top: 20px;
   margin-left: 50px;
   font-family: 'Nunito';
@@ -23,7 +19,6 @@ div.group{
 
 body {
   background-color: #ECEFF1
->>>>>>> 998e964f983fd840e1d55bea2efe631ec4b75f6d
 }
 
 #groups{
@@ -46,13 +41,14 @@ body {
     border-radius: 50%;
 }
 
-<<<<<<< HEAD
-.nodes{
+
+/* .nodes{
   borderWidth: 5;
-=======
+} */
+
 .healthBarClass {
   display: inline-block;
-  float: left;
+  /* float: left; */
   border: 1px solid #37474f;
   width: 35%;
   height: 210px;
@@ -79,5 +75,5 @@ body {
   margin-top: 20px;
   color: #37474f;
   font-family: 'Nunito'
->>>>>>> 998e964f983fd840e1d55bea2efe631ec4b75f6d
+/* >>>>>>> 998e964f983fd840e1d55bea2efe631ec4b75f6d */
 }
