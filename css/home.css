@@ -10,9 +10,22 @@ div.group{
     background-color: #FFECB3;
 }
 #healthBar{
+<<<<<<< HEAD
     display: inline-block;
     float: left;
+=======
+  margin-top: 20px;
+  margin-left: 50px;
+  font-family: 'Nunito';
+  color: #37474f;
+  /* color: #37474f; */
 }
+
+body {
+  background-color: #ECEFF1
+>>>>>>> 998e964f983fd840e1d55bea2efe631ec4b75f6d
+}
+
 #groups{
     border-style: solid;
     border-color: #FFA000;
@@ -33,6 +46,38 @@ div.group{
     border-radius: 50%;
 }
 
+<<<<<<< HEAD
 .nodes{
   borderWidth: 5;
+=======
+.healthBarClass {
+  display: inline-block;
+  float: left;
+  border: 1px solid #37474f;
+  width: 35%;
+  height: 210px;
+  margin-left: 50px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.oneHealthBar {
+  /* border: 1px solid black; */
+  width: 300px;
+  height: 18px;
+  /* margin-left: 20px; */
+  margin-right: 65px;
+  margin-top: 25px;
+  float: right;
+  background-color: #ECEFF1;
+}
+
+.barName {
+  display: inline-block;
+  float: left;
+  margin-left: 25px;
+  margin-top: 20px;
+  color: #37474f;
+  font-family: 'Nunito'
+>>>>>>> 998e964f983fd840e1d55bea2efe631ec4b75f6d
 }
