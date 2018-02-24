@@ -2,35 +2,72 @@
 @import url("index.css");
 
 div.group{
-    /**border-style: solid; 
+    /**border-style: solid;
     border-color: black; **/
     display: inline-block;
     vertical-align: top;
-    margin: 5px; 
+    margin: 5px;
     background-color: #FFECB3;
 }
 #healthBar{
-    display: inline-block;
-    float: left; 
+  margin-top: 20px;
+  margin-left: 50px;
+  font-family: 'Nunito';
+  color: #37474f;
+  /* color: #37474f; */
 }
+
+body {
+  background-color: #ECEFF1
+}
+
 #groups{
-    border-style: solid; 
-    border-color: #FFA000; 
+    border-style: solid;
+    border-color: #FFA000;
     display: inline-block;
-    float: right; 
+    float: right;
     width: 590px;
-    height: 180px; 
+    height: 180px;
     background-color: #FFC107;
 }
 .groupTitle{
-    text-align: center; 
+    text-align: center;
 }
 .proPic{
     width: 100px;
-    height: 100px; 
+    height: 100px;
     display: block;
-    margin: 0 auto; 
-    border-radius: 50%; 
+    margin: 0 auto;
+    border-radius: 50%;
 }
 
+.healthBarClass {
+  display: inline-block;
+  float: left;
+  border: 1px solid #37474f;
+  width: 35%;
+  height: 210px;
+  margin-left: 50px;
+  margin-top: 20px;
+  background-color: white;
+}
 
+.oneHealthBar {
+  /* border: 1px solid black; */
+  width: 300px;
+  height: 18px;
+  /* margin-left: 20px; */
+  margin-right: 65px;
+  margin-top: 25px;
+  float: right;
+  background-color: #ECEFF1;
+}
+
+.barName {
+  display: inline-block;
+  float: left;
+  margin-left: 25px;
+  margin-top: 20px;
+  color: #37474f;
+  font-family: 'Nunito'
+}
