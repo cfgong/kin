@@ -5,7 +5,7 @@
 
   <script type="text/javascript" src="js/vis.js"></script>
   <link href="../js/vis.js" rel="stylesheet" type="text/css" />
-
+  <link rel="stylesheet" href="css/home.css">
   <style type="text/css">
     #mynetwork {
       width: 600px;
@@ -24,16 +24,21 @@
 
 <script type="text/javascript">
   // create an array with nodes
-  var nodes = new vis.DataSet([
-    {id: 1, borderWidth: 3, label: 'Me'},
-    {id: 2, label: 'Family'},
-    {id: 3, label: 'High School Pals'},
-    {id: 4, label: 'Coworkers'},
-    {id: 5, label: 'Mom'},
-    {id: 6, label: 'Dad'},
-    {id: 7, label: 'Todd'},
-    {id: 8, label: 'David'},
-    {id: 9, label: 'Will'},
+  var nodes = new vis.DataSet([  //change things here to change things for specific Nodes
+    {id: 1, borderWidth: 3, size: 30, color: 'orange', label: 'Me'},
+    {id: 2, color: 'purple', label: 'Family'},
+    {id: 3, color: 'yellow', label: 'High School Pals'},
+    {id: 4, color: 'green', label: 'Coworkers'},
+    {id: 5,  color: 'purple', label: 'Mom'},
+    {id: 6, color: 'purple', label: 'Dad'},
+    {id: 7, color: 'purple', label: 'Riley'},
+    {id: 14, color: 'purple', label: 'Ana'},
+    {id: 8, color: 'yellow', label: 'Ryan'},
+    {id: 9, color: 'yellow', label: 'Justin'},
+    {id: 10, color: 'yellow', label: 'Joey'},
+    {id: 11, color: 'green', label: 'Pam'},
+    {id: 12, color: 'green', label: 'Jim'},
+    {id: 13, color: 'green', label: 'Dwight'}
   ]);
 
   // create an array with edges
@@ -41,11 +46,16 @@
     {from: 1, to: 3},
     {from: 1, to: 2},
     {from: 1, to: 4},
+    {from: 2, to: 14},
     {from: 2, to: 5},
     {from: 2, to: 6},
     {from: 2, to: 7},
     {from: 3, to: 8},
-    {from: 3, to: 9}
+    {from: 3, to: 9},
+    {from: 3, to: 10},
+    {from: 4, to: 11},
+    {from: 4, to: 12},
+    {from: 4, to: 13}
   ]);
 
   // create a network
@@ -54,7 +64,24 @@
     nodes: nodes,
     edges: edges
   };
-  var options = {};
+  var options = {    //edit things here to change properties of all nodes
+      interaction:{
+        zoomView: false
+      },
+      nodes: {
+          shape: 'dot',
+          size: 20,
+          font: {
+              size: 15,
+              color: 'black'
+          },
+          borderWidth: 4,
+          bordercolor: 'black'
+      },
+      edges: {
+          width: 2
+      }
+  };
   var network = new vis.Network(container, data, options);
 </script>
 
