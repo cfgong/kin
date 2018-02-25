@@ -9,25 +9,27 @@
     <link rel="stylesheet" type="text/css" href="css/login.css"/>
   </head>
   <body>
+    <script src="js/login.js"></script>
     <div class="login-header">
       <h1> Kin </h1>
       <h3> Please create a username and password
     </div>
   <div class="login-box">
     <div class="login-form">
-    <form "login-form">
+    <form id="login-form" onsubmit="return validatePassword()">
       Username:<br>
-      <input type="text" name="username"><br>
+      <input type="text" id="username" name="username"><br required>
       Confirm Username:<br>
 
-      <input type="text" name="username"><br>
+      <input type="text" id="confirm_username" name="username" required><br>
       <br>
       Password:<br>
-      <input type="password" name="pword"><br>
+      <input type="password" id="password" required><br>
       Confirm Password:
-      <input type="password" name="pword"><br>
-
+      <input type="password"  id="confirm_password" required><br>
+      <input class="submit-button" type="submit" value="Submit">
+      <input type="hidden" name="resulturl" value="groups.html">
     </form>
-    <button class = "submit-button" onclick="location.href='groups.html'" > Welcome </button>
+
   </div>
   </div>

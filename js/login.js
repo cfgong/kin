@@ -1,6 +1,22 @@
-function logincheck(){
-  if(document.getElementById("username1") = document.getElementById("username2")){
-    document.getElementById("button").innerHTML = "boobies";
-  }
 
+
+function validatePassword(){
+  var
+  username = document.getElementById("username").value,
+  confirm_username = document.getElementById("confirm_username").value,
+  password = document.getElementById("password").value,
+  confirm_password = document.getElementById("confirm_password").value;
+  if(username != confirm_username){
+    alert("Usernames do not match");
+  }
+  else if(password != confirm_password){
+    alert("Passwords do not match");
+  }
+  else{
+    //alert("Success!");
+    window.location.href='groups.html';
+  }
 }
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
