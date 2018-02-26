@@ -1,6 +1,5 @@
-var people = ["Victor", "Nathan", "Kaetlyn", "Kristi", "Michelle", "Bradie", "Vincent", "Karen", "Kaori", "Evegenia"];
+var people = ["Victor", "Nathan", "Michelle", "Misha", "Vincent", "Karen", "Kaori", "Evegenia"];
 var images = [];
-var status_ = [];
 var days = [];
 var lastPerson = 0;
 var max = 0;
@@ -12,96 +11,89 @@ function init(){
     images.push(t);
   }
     max = images.length;
-    //populating status list
-   for (var i = 0; i < 3; i++){
-    var t = "OVERDUE";
-    status_.push(t);
-  }
-    for (var i = 3; i < people.length; i++){
-    var t = "UPCOMING";
-    status_.push(t);
-  }
 
     //populating days list
     for (var i = -3; i < people.length; i++){
     days.push(Math.abs(i));
   }
 
-    var groupTitle = document.createElement("div");
-    groupTitle.setAttribute('class', "groupTitle");
-    groupTitle.innerHTML = "Status Bar";
-    var groupId = "group"+i;
-    groupTitle.setAttribute('id', groupId);
-
-    document.getElementById("groups").append(groupTitle);
-
-    lastPerson = 4;
+    lastPerson = 3;
     for (var i =0; i<lastPerson; i++){
-        addPerson(i);
+        addOverduePerson(i);
     }
+    addUpcomingPerson(3);
 
 };
-function addPerson(i){
-    var group = document.createElement("div");
-    group.setAttribute('class', "group");
-    var groupId = "group"+i;
-    group.setAttribute('id', groupId);
-    document.getElementById("groups").append(group);
-    //adding the status bar
+function addPerson(i, labelStr){
+  var group = document.createElement("div");
+  group.setAttribute('class', "group");
+  var groupId = "group"+i;
+  group.setAttribute('id', groupId);
+  document.getElementById("groups").append(group);
+  //adding the status bar
 
-    groupStatus= document.createElement("span");
-    groupStatus.setAttribute("class", "status");
-    groupStatus.innerHTML = status_[i];
-    group.append(groupStatus);
+  groupStatus= document.createElement("span");
+  groupStatus.setAttribute("class", "status");
+  groupStatus.innerHTML = labelStr;
+  group.append(groupStatus);
 
-    groupDays= document.createElement("span");
-    groupDays.setAttribute("class", "days");
-    groupDays.innerHTML = days[i]+" days";
-    group.append(groupDays);
+  groupDays= document.createElement("span");
+  groupDays.setAttribute("class", "days");
+  groupDays.innerHTML = days[i]+" days";
+  group.append(groupDays);
 
-    //adding an image
-    img = document.createElement("img");
-    img.setAttribute("src", images[i]);
-    img.setAttribute("class", "proPic");
-    group.append(img);
-    //group.innerHTML+="<br>";
+  //adding an image
+  img = document.createElement("img");
+  img.setAttribute("src", images[i]);
+  img.setAttribute("class", "proPic");
+  group.append(img);
+  //group.innerHTML+="<br>";
 
-    //group title
-    groupTitle = document.createElement("DIV");
-    groupTitle.setAttribute("class", "groupTitle");
-    groupTitleId = "groupTitle"+i;
-    groupTitle.setAttribute("id", groupTitleId);
-    groupTitle.innerHTML = people[i];
-    group.append(groupTitle);
-
-
-
+  //group title
+  groupTitle = document.createElement("DIV");
+  groupTitle.setAttribute("class", "groupTitle");
+  groupTitleId = "groupTitle"+i;
+  groupTitle.setAttribute("id", groupTitleId);
+  groupTitle.innerHTML = people[i];
+  group.append(groupTitle);
+  return groupId;
+}
+function addOverduePerson(i){
+    var groupId = addPerson(i, "OVERDUE");
+    var group = document.getElementById(groupId);
     //adding a remove person button
     var removeButton = document.createElement("BUTTON");
-    removeButton.innerHTML =  "Remove";
+    //removeButton.innerHTML =  "Remove";
+    removeButton.innerHTML =  "<i class = 'material-icons' class='svg'>check_circle</i> <br> Remove";
     removeButton.onclick = function(){removeGroup(groupId, lastPerson);}
     group.appendChild(removeButton);
 
     //adding a postpone button
     var removeButton = document.createElement("BUTTON");
-    removeButton.innerHTML =  "Postpone";
+    removeButton.innerHTML =  "<img src ='img/postpone.svg' class = 'svg'><br>Postpone";
     removeButton.onclick = function(){postponeGroup(groupId, lastPerson);}
     group.appendChild(removeButton);
+}
+function addUpcomingPerson(i){
+    var groupId = addPerson(i, "UPCOMING");
 }
 function removeGroup(elementId, i){
     element = document.getElementById(elementId);
     element.remove(elementId);
+    lastPerson++;
+    addUpcomingPerson(lastPerson);
     /**
     if (lastPerson >= max){
         lastPerson = 0;
     }
     addPerson(lastPerson);
     lastPerson++;
-    **/
+
     if (lastPerson<max){
         addPerson(lastPerson);
         lastPerson++;
     }
+    **/
 }
 function postponeGroup(elementId, i){
     prompt('Specify the number of days to postpone', 1);

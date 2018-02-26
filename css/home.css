@@ -5,14 +5,21 @@ div.group{
     border: solid 1px;
     border-color: var(--color1);
     display: inline-block;
+    width: 150px;
     vertical-align: top;
     margin: 3px;
+    height: 200px;
 }
 span.days{
   float: right;
 }
-span.status{
-  color: orange;
+.svg{
+  width: 20px;
+}
+button{
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
 }
 #healthBar{
   margin-top: 20px;
@@ -31,7 +38,7 @@ body {
     /**border-color: #FFA000;**/
     display: inline-block;
     float: right;
-    width: 650px;
+    width: 630px;
     height: 210px;
     background-color: white;
 }
