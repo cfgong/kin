@@ -1,7 +1,6 @@
 
 
 function validatePassword(){
-  var
   username = document.getElementById("username").value,
   confirm_username = document.getElementById("confirm_username").value,
   password = document.getElementById("password").value,
@@ -12,9 +11,11 @@ function validatePassword(){
   else if(password != confirm_password){
     alert("Passwords do not match");
   }
-  else{
+  else{//if they're equal
     //alert("Success!");
-    window.location.href='groups.html';
+    console.log(here);
+    window.location.href='../groups.html';
+    //location.href = "www.yoursite.com"
   }
 }
 
