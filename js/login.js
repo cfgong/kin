@@ -13,8 +13,8 @@ function validatePassword(){
     alert("Passwords do not match");
   }
   else{
-    //alert("Success!");
-    window.location.href='groups.html';
+    //alert("Success!") see this should bring it to a new page but it won't
+    window.location.href ='groups.html';
   }
 }
 
