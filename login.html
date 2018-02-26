@@ -1,9 +1,8 @@
 <html>
   <head>
     <title> Kin </title>
-    <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
 
     <title> Kin Sign Up </title>
     <link rel="stylesheet" type="text/css" href="css/login.css"/>
@@ -16,13 +15,15 @@
     </div>
   <div class="login-box">
     <div class="login-form">
-    <form id="login-form" onsubmit="return validatePassword()">
+    <form id="login-form" onsubmit="validatePassword(); return false;">
       Username:<br>
+<<<<<<< HEAD
       <input type="text" id="username" name="username" required><br>
       Confirm Username:<br>
+=======
+      <input type="text" id="username" name="username"><br required>
+>>>>>>> 8dc0262130a4556b6cf7253d6a6babc0e68ec5ce
 
-      <input type="text" id="confirm_username" name="username" required><br>
-      <br>
       Password:<br>
       <input type="password" id="password" required><br>
       Confirm Password:
