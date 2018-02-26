@@ -9,6 +9,9 @@ div.group{
     margin: 5px;
     background-color: #FFECB3;
 }
+span.days{
+  float: right; 
+}
 #healthBar{
   margin-top: 20px;
   margin-left: 50px;
