@@ -2,15 +2,17 @@
 @import url("index.css");
 
 div.group{
-    /**border-style: solid;
-    border-color: black; **/
+    border: solid 1px;
+    border-color: var(--color1);
     display: inline-block;
     vertical-align: top;
-    margin: 5px;
-    background-color: #FFECB3;
+    margin: 3px;
 }
 span.days{
-  float: right; 
+  float: right;
+}
+span.status{
+  color: orange;
 }
 #healthBar{
   margin-top: 20px;
@@ -26,12 +28,12 @@ body {
 
 #groups{
     border-style: solid;
-    border-color: #FFA000;
+    /**border-color: #FFA000;**/
     display: inline-block;
     float: right;
-    width: 590px;
-    height: 180px;
-    background-color: #FFC107;
+    width: 650px;
+    height: 210px;
+    background-color: white;
 }
 .groupTitle{
     text-align: center;

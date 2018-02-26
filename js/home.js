@@ -14,11 +14,11 @@ function init(){
     max = images.length;
     //populating status list
    for (var i = 0; i < 3; i++){
-    var t = "overdue";
+    var t = "OVERDUE";
     status_.push(t);
   }
     for (var i = 3; i < people.length; i++){
-    var t = "upcoming";
+    var t = "UPCOMING";
     status_.push(t);
   }
 
@@ -50,7 +50,7 @@ function addPerson(i){
     //adding the status bar
 
     groupStatus= document.createElement("span");
-    //groupStatus.setAttribute("class", "groupTitle");
+    groupStatus.setAttribute("class", "status");
     groupStatus.innerHTML = status_[i];
     group.append(groupStatus);
 
