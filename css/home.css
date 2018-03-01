@@ -89,3 +89,21 @@ body {
   font-family: 'Nunito'
 /* >>>>>>> 998e964f983fd840e1d55bea2efe631ec4b75f6d */
 }
+
+#mynetwork {
+  width: 800px;
+  height: 600px;
+  border: 1px solid lightgray;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.network-display {
+  height: 600px;
+  width: 450px;
+  border: 1px solid lightgray;
+  margin-left: 50px;
+}
+#mynetwork, .network-display {
+  display: inline-block;
+}
