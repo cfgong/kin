@@ -64,7 +64,7 @@ function addOverduePerson(i){
     //adding a remove person button
     var removeButton = document.createElement("BUTTON");
     //removeButton.innerHTML =  "Remove";
-    removeButton.innerHTML =  "<i class = 'material-icons' class='svg'>check_circle</i> <br> Remove";
+    removeButton.innerHTML =  "<i class = 'material-icons' class='svg'>check_circle</i> <br> Contacted";
     removeButton.onclick = function(){removeGroup(groupId, lastPerson);}
     group.appendChild(removeButton);
 
@@ -96,7 +96,7 @@ function removeGroup(elementId, i){
     **/
 }
 function postponeGroup(elementId, i){
-    prompt('Specify the number of days to postpone', 1);
+    prompt('How many days would you like to postpone?', 1);
     removeGroup(elementId, i);
 }
 
