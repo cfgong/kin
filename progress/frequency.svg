@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="505px" height="59px" viewBox="0 0 505 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Frequency" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-262.000000, -50.000000)">
+        <g id="Group" transform="translate(262.000000, 48.000000)">
+            <g id="Progress-Indicator">
+                <text id="GROUPS" font-family="Avenir-Heavy, Avenir" font-size="14" font-weight="600" fill="#FFECCC">
+                    <tspan x="0" y="60">GROUPS</tspan>
+                </text>
+                <text id="FREQUENCY" font-family="Avenir-Heavy, Avenir" font-size="14" font-weight="600" fill="#FFECCC">
+                    <tspan x="211" y="60">FREQUENCY</tspan>
+                </text>
+                <text id="SETTINGS" font-family="Avenir-Heavy, Avenir" font-size="14" font-weight="600" fill="#FFECCC">
+                    <tspan x="439" y="60">SETTINGS</tspan>
+                </text>
+                <g id="Group" stroke-width="1" fill-rule="evenodd" transform="translate(15.000000, 4.000000)">
+                    <path d="M34.5,17.5 L215.5,17.5" id="Line" stroke="#FFE2B3" stroke-width="3" opacity="0.7" stroke-linecap="square"></path>
+                    <path d="M252.5,17.5 L433.5,17.5" id="Line-Copy" stroke="#FFE2B3" stroke-width="3" opacity="0.7" stroke-linecap="square"></path>
+                    <circle id="Oval" stroke="#FFE2B3" stroke-width="3" opacity="0.7" cx="16" cy="18" r="16"></circle>
+                    <circle id="Oval-Copy" stroke="#FFE2B3" stroke-width="3" opacity="0.7" cx="234" cy="16" r="16"></circle>
+                    <circle id="Oval-Copy-2" stroke="#FFE2B3" stroke-width="3" opacity="0.7" cx="452" cy="17" r="16"></circle>
+                    <circle id="Oval-4" fill="#FFECCC" cx="16" cy="18" r="10"></circle>
+                </g>
+            </g>
+            <circle id="Oval-4" fill="#FFECCC" cx="249" cy="20" r="10"></circle>
+        </g>
+    </g>
+</svg>
