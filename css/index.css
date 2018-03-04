@@ -13,13 +13,13 @@ body, div, button, p{
 h1{
     font-family: 'Avenir', sans-serif;
     color: #37474f;
-    margin-top: 5%; 
+    margin-top: 5%;
     text-align: center;
 }
 h2, h3, h4{
     font-family: 'Nunito', sans-serif;
-    color: var(--color1); 
-    text-align: center; 
+    color: var(--color1);
+    text-align: center;
 }
 
 .next-button{

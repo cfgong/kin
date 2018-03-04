@@ -2,12 +2,24 @@
 @import url("index.css");
 
 div.group{
-    /**border-style: solid;
-    border-color: black; **/
+    border: solid 1px;
+    border-color: var(--color1);
     display: inline-block;
+    width: 150px;
     vertical-align: top;
-    margin: 5px;
-    background-color: #FFECB3;
+    margin: 3px;
+    height: 200px;
+}
+span.days{
+  float: right;
+}
+.svg{
+  width: 20px;
+}
+button{
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
 }
 #healthBar{
   margin-top: 20px;
@@ -23,12 +35,12 @@ body {
 
 #groups{
     border-style: solid;
-    border-color: #FFA000;
+    /**border-color: #FFA000;**/
     display: inline-block;
     float: right;
-    width: 590px;
-    height: 180px;
-    background-color: #FFC107;
+    width: 630px;
+    height: 210px;
+    background-color: white;
 }
 .groupTitle{
     text-align: center;
@@ -76,4 +88,22 @@ body {
   color: #37474f;
   font-family: 'Nunito'
 /* >>>>>>> 998e964f983fd840e1d55bea2efe631ec4b75f6d */
+}
+
+#mynetwork {
+  width: 800px;
+  height: 600px;
+  border: 1px solid lightgray;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.network-display {
+  height: 600px;
+  width: 450px;
+  border: 1px solid lightgray;
+  margin-left: 50px;
+}
+#mynetwork, .network-display {
+  display: inline-block;
 }
