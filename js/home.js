@@ -22,7 +22,7 @@ function init(){
         addOverduePerson(i);
     }
     addUpcomingPerson(3);
-
+//graph
     var nodes = new vis.DataSet([  //change things here to change things for specific Nodes
       {id: 1, borderWidth: 3, size: 30, color: 'orange', label: 'Me'},
       {id: 2, color: 'purple', label: 'Family'},
@@ -75,7 +75,7 @@ function init(){
                 color: 'black'
             },
             borderWidth: 4,
-            bordercolor: 'black'
+            // bordercolor: 'black'
         },
         edges: {
             width: 2
@@ -83,6 +83,31 @@ function init(){
     };
     var network = new vis.Network(container, data, options);
 };
+
+function clickPerson() {
+  network.on( 'click', function(properties) {
+    console.log("here");
+    var ids = properties.nodes;
+    console.log(ids);
+    if (ids == 12) {
+      document.getElementById("inputName").innerHTML = "Jim"
+      document.getElementById("inputGroup").innerHTML = "Coworkers"
+      document.getElementById("inputFrequency").innerHTML = "Biweekly"
+      document.getElementById("inputHealth").innerHTML = "Healthy"
+      document.getElementById("inputContact").innerHTML = "2/18/18"
+    } else if (ids == 5) {
+      document.getElementById("inputName").innerHTML = "Mom"
+      document.getElementById("inputGroup").innerHTML = "Family"
+      document.getElementById("inputFrequency").innerHTML = "Daily"
+      document.getElementById("inputHealth").innerHTML = "Healthy"
+      document.getElementById("inputContact").innerHTML = "3/4/18"
+    }
+    var clickedNodes = nodes.get(ids);
+    console.log('clicked nodes:', clickedNodes);
+
+  });
+}
+
 function addPerson(i, labelStr){
   var group = document.createElement("div");
   group.setAttribute('class', "group");
