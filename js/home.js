@@ -22,7 +22,7 @@ function init(){
         addOverduePerson(i);
     }
     addUpcomingPerson(3);
-
+//graph
     var nodes = new vis.DataSet([  //change things here to change things for specific Nodes
       {id: 1, borderWidth: 3, size: 30, color: 'orange', label: 'Me'},
       {id: 2, color: 'purple', label: 'Family'},
@@ -75,14 +75,85 @@ function init(){
                 color: 'black'
             },
             borderWidth: 4,
-            bordercolor: 'black'
+            // bordercolor: 'black'
         },
         edges: {
             width: 2
         }
     };
     var network = new vis.Network(container, data, options);
+
+    network.on( 'click', function(properties) {
+      // console.log("here");
+      var ids = properties.nodes;
+      // console.log(ids);
+      if (ids == 12) {
+        document.getElementById("inputName").innerHTML = "Jim"
+        document.getElementById("inputGroup").innerHTML = "Coworkers"
+        document.getElementById("inputFrequency").innerHTML = "Biweekly"
+        document.getElementById("inputHealth").innerHTML = "Healthy"
+        document.getElementById("inputContact").innerHTML = "2/18/18"
+      } else if (ids == 5) {
+        document.getElementById("inputName").innerHTML = "Mom"
+        document.getElementById("inputGroup").innerHTML = "Family"
+        document.getElementById("inputFrequency").innerHTML = "Daily"
+        document.getElementById("inputHealth").innerHTML = "Healthy"
+        document.getElementById("inputContact").innerHTML = "3/4/18"
+      } else if (ids == 6) {
+        document.getElementById("inputName").innerHTML = "Dad"
+        document.getElementById("inputGroup").innerHTML = "Family"
+        document.getElementById("inputFrequency").innerHTML = "Daily"
+        document.getElementById("inputHealth").innerHTML = "Semi-Healthy"
+        document.getElementById("inputContact").innerHTML = "2/14/18"
+      }else if (ids == 7) {
+        document.getElementById("inputName").innerHTML = "Riley"
+        document.getElementById("inputGroup").innerHTML = "Family"
+        document.getElementById("inputFrequency").innerHTML = "Biweekly"
+        document.getElementById("inputHealth").innerHTML = "Semi-Healthy"
+        document.getElementById("inputContact").innerHTML = "2/17/18"
+      }else if (ids == 14) {
+        document.getElementById("inputName").innerHTML = "Ana"
+        document.getElementById("inputGroup").innerHTML = "Family"
+        document.getElementById("inputFrequency").innerHTML = "Biweekly"
+        document.getElementById("inputHealth").innerHTML = "Healthy"
+        document.getElementById("inputContact").innerHTML = "2/27/18"
+      }else if (ids == 9) {
+        document.getElementById("inputName").innerHTML = "Justin"
+        document.getElementById("inputGroup").innerHTML = "High School Pals"
+        document.getElementById("inputFrequency").innerHTML = "Monthly"
+        document.getElementById("inputHealth").innerHTML = "Poor"
+        document.getElementById("inputContact").innerHTML = "12/4/17"
+      }else if (ids == 10) {
+        document.getElementById("inputName").innerHTML = "Joey"
+        document.getElementById("inputGroup").innerHTML = "High School Pals"
+        document.getElementById("inputFrequency").innerHTML = "Biweekly"
+        document.getElementById("inputHealth").innerHTML = "Healthy"
+        document.getElementById("inputContact").innerHTML = "3/4/18"
+      }else if (ids == 11) {
+        document.getElementById("inputName").innerHTML = "Pam"
+        document.getElementById("inputGroup").innerHTML = "Coworkers"
+        document.getElementById("inputFrequency").innerHTML = "Weekly"
+        document.getElementById("inputHealth").innerHTML = "Healthy"
+        document.getElementById("inputContact").innerHTML = "2/24/18"
+      }else if (ids == 13) {
+        document.getElementById("inputName").innerHTML = "Dwight"
+        document.getElementById("inputGroup").innerHTML = "Coworkers"
+        document.getElementById("inputFrequency").innerHTML = "Biweekly"
+        document.getElementById("inputHealth").innerHTML = "poor"
+        document.getElementById("inputContact").innerHTML = "12/19/17"
+      }else if (ids == 8) {
+        document.getElementById("inputName").innerHTML = "Ryan"
+        document.getElementById("inputGroup").innerHTML = "High School Pals"
+        document.getElementById("inputFrequency").innerHTML = "Monthly"
+        document.getElementById("inputHealth").innerHTML = "Poor"
+        document.getElementById("inputContact").innerHTML = "1/1/18"
+      }
+      var clickedNodes = nodes.get(ids);
+      // console.log('clicked nodes:', clickedNodes);
+
+    });
 };
+
 function addPerson(i, labelStr){
   var group = document.createElement("div");
   group.setAttribute('class', "group");

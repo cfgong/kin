@@ -1,39 +1,47 @@
 @import "index.css";
 @import url("index.css");
-div.group{
-    border-style: solid; 
-    border-color: black; 
+div.group, #addGroupButton{
+    border-style: solid;
+    border-color: black;
     display: inline-block;
     vertical-align: top;
-    margin: 5px; 
+    margin: 5px;
 }
+
+#addGroupButton{
+  width: 240px;
+  text-align:center;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+}
+
 div.person{
-    background-color: var(--color1); 
+    background-color: var(--color1);
     border-top-style: solid;
-    border-bottom-style:solid; 
+    border-bottom-style:solid;
     border-color: gray;
-    padding: 10px; 
-    margin: 5px; 
+    padding: 10px;
+    margin: 5px;
 }
 input{
-    margin: 0px 10px; 
+    margin: 0px 10px;
 }
 .addButton{
-    margin: 5px auto; 
-    display: block; 
+    margin: 5px auto;
+    display: block;
 }
 #groups{
     display: inline-block;
-    overflow-x: scroll; 
-    overflow-y: auto; 
-    
+    overflow-x: scroll;
+    overflow-y: auto;
+
     max-width: 95%;
     margin: 0 1em;
 
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 .groupTitle{
-    background-color: #4CAF50; 
-    padding: 15px; 
+    background-color: #4CAF50;
+    padding: 15px;
 }
-
