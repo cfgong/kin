@@ -7,11 +7,13 @@ div.group, #addGroupButton{
     vertical-align: top;
     margin: 5px;
 }
+
 #addGroupButton{
   width: 240px;
   text-align:center;
   color: white;
   cursor: pointer;
+  display: inline-block;
 }
 
 div.person{
