@@ -1,15 +1,13 @@
 @import "index.css";
 @import url("index.css");
-<<<<<<< HEAD
 
 #groupsprog{
   display:block;
   margin: 0 auto;
 }
 div.group{
-=======
+
 div.group, #addGroupButton{
->>>>>>> 42dab253d50f2218cd162706d81f8e4f0ecb2b03
     border-style: solid;
     border-color: black;
     display: inline-block;
