@@ -1,25 +1,19 @@
 /**
-overall CSS for everything
+Global CSS 
 **/
-
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-@import url('https://fonts.googleapis.com/css?family=Rubik');
-:root{
-    --color1: #78909C;
-}
 body, div, button, p{
    font-family: 'Avenir', sans-serif;
 }
 h1{
     font-family: 'Avenir', sans-serif;
-    color: #37474f;
+    color: #FFC107;
     margin-top: 5%;
-    text-align: center;
+    text-align: left;
 }
 h2, h3, h4{
-    font-family: 'Nunito', sans-serif;
-    color: var(--color1);
-    text-align: center;
+    font-family: 'Avenir', sans-serif;
+    color: #37474F;
+    text-align: left;
 }
 
 .next-button{
@@ -27,7 +21,7 @@ h2, h3, h4{
     bottom: 10%;
     right: 5%;
     background-color: var(--color1);
-    color: white;
+    color: #FFC107;
 
   border: none;
   color: white;
