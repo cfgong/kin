@@ -1,6 +1,7 @@
 @import "index.css";
 @import url("index.css");
 
+/*STATUS BAR*/
 div.group{
     border: solid 1px;
     border-color: var(--color1);
@@ -20,11 +21,12 @@ button{
   text-decoration: none;
   background-color: transparent;
   border: none;
+  font-size: 10px;
 }
 #healthBar{
   margin-top: 20px;
   margin-left: 50px;
-  font-family: 'Nunito';
+  font-family: 'Avenir';
   color: #37474f;
   /* color: #37474f; */
 }
@@ -38,7 +40,7 @@ body {
     /**border-color: #FFA000;**/
     display: inline-block;
     float: right;
-    width: 630px;
+    width: 600px;
     height: 210px;
     background-color: white;
 }
@@ -53,7 +55,7 @@ body {
     border-radius: 50%;
 }
 
-
+/*HEALTH BAR*/
 /* .nodes{
   borderWidth: 5;
 } */
@@ -86,7 +88,7 @@ body {
   margin-left: 25px;
   margin-top: 20px;
   color: #37474f;
-  font-family: 'Nunito'
+  font-family: 'Avenir'
 /* >>>>>>> 998e964f983fd840e1d55bea2efe631ec4b75f6d */
 }
 
@@ -98,12 +100,116 @@ body {
   margin-top: 50px;
 }
 
+
 .network-display {
   height: 600px;
   width: 450px;
   border: 1px solid lightgray;
-  margin-left: 50px;
+  margin-right: 60px;
+  margin-top: 50px;
+  float: right;
 }
 #mynetwork, .network-display {
   display: inline-block;
+}
+
+#name {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #37474f;
+  font-family: 'Nunito'
+}
+
+#inputName {
+  font-size: 36px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #37474f;
+  font-family: 'Nunito'
+}
+
+#name, #inputName {
+  display: inline-block;
+}
+
+#group {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 10px;
+  /* margin-top: 10px; */
+  color: #37474f;
+  font-family: 'Nunito'
+}
+#inputGroup {
+  font-size: 36px;
+  margin-left: 10px;
+  /* margin-top: 10px; */
+  color: #37474f;
+  font-family: 'Nunito'
+}
+
+#group, #inputGroup {
+  display: inline;
+}
+
+#frequency {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 10px;
+  /* margin-top: 10px; */
+  color: #37474f;
+  font-family: 'Nunito'
+}
+#inputFrequency {
+  font-size: 36px;
+  margin-left: 10px;
+  /* margin-top: 10px; */
+  color: #37474f;
+  font-family: 'Nunito'
+}
+
+#frequency, #inputFrequency {
+  display: inline;
+}
+
+#health {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 10px;
+  /* margin-top: 10px; */
+  color: #37474f;
+  font-family: 'Nunito'
+}
+#inputHealth {
+  font-size: 36px;
+  margin-left: 10px;
+  /* margin-top: 10px; */
+  color: #37474f;
+  font-family: 'Nunito'
+}
+
+#health, #inputHealth {
+  display: inline;
+}
+
+#contact {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 10px;
+  /* margin-top: 10px; */
+  color: #37474f;
+  font-family: 'Nunito'
+}
+#inputContact {
+  font-size: 36px;
+  margin-left: 10px;
+  /* margin-top: 10px; */
+  color: #37474f;
+  font-family: 'Nunito'
+}
+
+#contact, #inputContact {
+  display: inline;
 }
