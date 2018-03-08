@@ -24,7 +24,7 @@ function init(){
     addUpcomingPerson(3);
 //graph
     var nodes = new vis.DataSet([  //change things here to change things for specific Nodes
-      {id: 1, borderWidth: 3, size: 30, color: 'orange', label: 'Me'},
+      {id: 1, borderWidth: 3, size: 30, fixed: true, color: 'orange', label: 'Me'},
       {id: 2, color: 'purple', label: 'Family'},
       {id: 3, color: 'yellow', label: 'High School Pals'},
       {id: 4, color: 'green', label: 'Coworkers'},

@@ -1,5 +1,12 @@
 @import "index.css";
 @import url("index.css");
+
+#groupsprog{
+  display:block;
+  margin: 0 auto;
+}
+div.group{
+
 div.group, #addGroupButton{
     border-style: solid;
     border-color: black;
