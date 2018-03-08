@@ -1,6 +1,9 @@
 /**
-Global CSS 
+Global CSS
 **/
+:root{
+    --color1: #78909C;
+}
 body, div, button, p{
    font-family: 'Avenir', sans-serif;
 }
@@ -8,12 +11,15 @@ h1{
     font-family: 'Avenir', sans-serif;
     color: #FFC107;
     margin-top: 5%;
-    text-align: left;
+    text-align: center;
 }
 h2, h3, h4{
     font-family: 'Avenir', sans-serif;
     color: #37474F;
-    text-align: left;
+    text-align: center;
+}
+button{
+  cursor: pointer;
 }
 
 .next-button{

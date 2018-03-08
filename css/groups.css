@@ -12,10 +12,21 @@ div.group, #addGroupButton{
     display: inline-block;
     vertical-align: top;
     margin: 5px;
+    width: 400px;
+}
+button.removeButton{
+  text-decoration: none;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+}
+button.addButton{
+  text-decoration: none;
+  background-color: white;
+  border: none;
 }
 
 #addGroupButton{
-  width: 240px;
   text-align:center;
   color: white;
   cursor: pointer;

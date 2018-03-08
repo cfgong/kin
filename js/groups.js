@@ -1,5 +1,4 @@
 var groupId = 0;
-var groupCount = 0;
 
 function init(){
     addGroupButton();
@@ -21,7 +20,6 @@ function addGroup(){
     var group = document.createElement("div");
     group.setAttribute('class', "group");
     group.setAttribute('id', elementId);
-    group.setAttribute('person_count', 1);
 
     //document.getElementById("groups").append(group);
     var addGroupButton = document.getElementById("addGroupButton");
@@ -35,7 +33,8 @@ function addGroup(){
     addTextField(groupTitleId, "Group Name: ");
 
     var removeButton = document.createElement("BUTTON");
-    removeButton.innerHTML =  "Remove";
+    removeButton.setAttribute("class", "removeButton");
+    removeButton.innerHTML =  "x";
     removeButton.onclick = function(){removeGroup(elementId);}
     groupTitle.appendChild(removeButton);
 
@@ -45,13 +44,11 @@ function addGroup(){
     //adding one add person button
     var addButton = document.createElement("BUTTON");
     addButton.setAttribute("class", "addButton");
-    addButton.innerHTML =  "Add Person";
+    addButton.innerHTML =  "<i class='material-icons'>add_circle_outline</i>";
     addButton.onclick = function(){addPerson(elementId, addButton);}
     group.appendChild(addButton);
 
     groupId++;
-    groupCount++;
-
 }
 function addTextField(parentId, labelStr){
     var parent = document.getElementById(parentId);
@@ -84,12 +81,11 @@ function addPerson(groupId, addButton){
 
     //adding a remove person button
     var removeButton = document.createElement("BUTTON");
-    removeButton.innerHTML =  "Remove";
+    removeButton.setAttribute("class", "removeButton");
+    removeButton.innerHTML =  "x";
     removeButton.onclick = function(){removePerson(groupId, personId);}
     person.appendChild(removeButton);
 
-    //person_count addition
-    group.setAttribute('person_count',p+1);
 }
 function removePerson(parentId, personId){
     parent = document.getElementById(parentId);
@@ -98,7 +94,6 @@ function removePerson(parentId, personId){
 }
 function removeGroup(elementId){
     removeElement(elementId);
-    groupCount--;
 }
 
 function removeElement(elementId) {
