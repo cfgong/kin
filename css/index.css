@@ -17,9 +17,12 @@ h2, h3, h4{
     font-family: 'Avenir', sans-serif;
     color: #37474F;
     text-align: center;
+    font-weight: 500;
 }
+
 button{
   cursor: pointer;
+  border-radius: 12px;
 }
 
 .next-button{
@@ -28,7 +31,6 @@ button{
     right: 5%;
     background-color: var(--color1);
     color: #FFC107;
-
   border: none;
   color: white;
   padding: 16px 32px;
