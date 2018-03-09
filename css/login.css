@@ -2,15 +2,23 @@
 @import url("index.css");
 
 body {
-  background: linear-gradient(to right bottom, #FF8F00, #FFCA28);
+  background: linear-gradient(to right bottom, #FF6F00, #FFCA28);
   font-family: 'Avenir';
 }
 
 .login-header h1 {
   margin-top: 10%;
-  color: #FFF8E1;
+  color: #FFFFFF;
   font-family: 'Avenir';
   font-size: 72px;
+  text-align: center;
+}
+
+.login-header h3 {
+  margin: auto;
+  color: #FFFFFF;
+  font-family: 'Avenir';
+  font-size: 20px;
   text-align: center;
 }
 
@@ -20,6 +28,7 @@ body {
   width: 75%;
   padding: 10px;
   border-radius: 5px;
+  align-content: center;
 
 }
 
@@ -31,9 +40,9 @@ body {
 }
 
 .submit-button {
-  background-color: #FFF8E1;
+  background-color: #ffffff;
   border: none;
-  border-radius: 6px;
+  border-radius: 21px;
   font-family: 'Avenir';
   color: #37474F;
   padding: 16px 32px;
