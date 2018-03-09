@@ -10,9 +10,11 @@ div.group{
     vertical-align: top;
     margin: 3px;
     height: 200px;
+    /* margin-right: 50px; */
 }
 span.days{
   float: right;
+
 }
 .svg{
   width: 20px;
@@ -30,7 +32,13 @@ button{
   color: #37474f;
   /* color: #37474f; */
 }
-
+#info {
+  font-family: 'Avenir';
+  color: #37474f;
+}
+#info, #healthBar {
+  display: inline-block;
+}
 body {
   background-color: #ECEFF1
 }
@@ -43,6 +51,7 @@ body {
     width: 630px;
     height: 210px;
     background-color: white;
+    margin-right: 50px;
 }
 .groupTitle{
     text-align: center;
@@ -67,7 +76,7 @@ body {
   width: 35%;
   height: 210px;
   margin-left: 50px;
-  margin-top: 20px;
+  /* margin-top: 10px; */
   background-color: white;
 }
 
@@ -92,12 +101,21 @@ body {
 /* >>>>>>> 998e964f983fd840e1d55bea2efe631ec4b75f6d */
 }
 
+#edit-groups {
+  margin-top: 50px;
+  margin-left: 50px;
+  /* text-align: left; */
+  border:1px solid lightgray;
+  color: #37474f;
+  font-family: 'Avenir'
+}
+
 #mynetwork {
   width: 800px;
   height: 600px;
   border: 1px solid lightgray;
   margin-left: 50px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 
@@ -106,7 +124,7 @@ body {
   width: 450px;
   border: 1px solid lightgray;
   margin-right: 60px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   float: right;
 }
 #mynetwork, .network-display {
