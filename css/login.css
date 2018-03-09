@@ -1,10 +1,8 @@
 @import "index.css";
 @import url("index.css");
-@import React from 'react';
-@import TextField from 'material-ui/TextField';
 
 body {
-  background: linear-gradient(to right bottom, #FF9100, #FFD54F);
+  background: linear-gradient(to right bottom, #FF8F00, #FFCA28);
   font-family: 'Avenir';
 }
 
