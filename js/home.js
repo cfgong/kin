@@ -1,4 +1,4 @@
-var people = ["Victor", "Nathan", "Michelle", "Misha", "Vincent", "Karen", "Kaori", "Evegenia"];
+var people = ["Ryan", "Justin", "Joey", "Misha", "Vincent", "Karen", "Kaori", "Evegenia"];
 var images = [];
 var days = [];
 var lastPerson = 0;
@@ -24,9 +24,9 @@ function init(){
     addUpcomingPerson(3);
 //graph
     var nodes = new vis.DataSet([  //change things here to change things for specific Nodes
-      {id: 1, borderWidth: 3, size: 30, fixed: true, color: 'orange', label: 'Me'},
+      {id: 1, borderWidth: 3, size: 30, color: 'orange', label: 'Me'},
       {id: 2, color: 'purple', label: 'Family'},
-      {id: 3, color: 'yellow', label: 'High School Pals'},
+      {id: 3, color: 'yellow', label: 'Friends'},
       {id: 4, color: 'green', label: 'Coworkers'},
       {id: 5,  color: 'purple', label: 'Mom'},
       {id: 6, color: 'purple', label: 'Dad'},
@@ -80,6 +80,7 @@ function init(){
         edges: {
             width: 2
         }
+
     };
     var network = new vis.Network(container, data, options);
 
@@ -152,6 +153,8 @@ function init(){
       // console.log('clicked nodes:', clickedNodes);
 
     });
+    document.getElementById("info").addEventListener("mouseover", mouseOver);
+    document.getElementById("info").addEventListener("mouseout", mouseOut);
 };
 
 function addPerson(i, labelStr){
@@ -210,8 +213,10 @@ function addUpcomingPerson(i){
 function removeGroup(elementId, i){
     element = document.getElementById(elementId);
     element.remove(elementId);
+    document.getElementById("friendHealth").style.width = document.getElementById("friendHealth").style.width + '5%'
     lastPerson++;
     addUpcomingPerson(lastPerson);
+
     /**
     if (lastPerson >= max){
         lastPerson = 0;
@@ -230,6 +235,14 @@ function postponeGroup(elementId, i){
     removeGroup(elementId, i);
 }
 
+function mouseOver() {
+    document.getElementById("info").style.color = "red";
+    document.getElementById("info").onclick = function(){alert('This how your relationship health is calculated');}
 
+}
+
+function mouseOut() {
+    document.getElementById("info").style.color = "black";
+}
 
 init();
