@@ -35,6 +35,7 @@ button{
 #info {
   font-family: 'Avenir';
   color: #37474f;
+  font-size: 15px;
 }
 #info, #healthBar {
   display: inline-block;
