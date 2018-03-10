@@ -8,13 +8,14 @@ body, div, button, p{
 h1{
     font-family: 'Avenir', sans-serif;
     color: #FFC107;
-    text-align: center;
-    margin-bottom: 10px;
+    text-align: left;
+    margin: 10px 10%;
 }
 h2, h3, h4{
     font-family: 'Avenir', sans-serif;
     color: #37474F;
-    text-align: center;
+    text-align: left;
+    margin: 5px 10%;
     font-weight: 500;
 }
 
