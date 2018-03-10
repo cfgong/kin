@@ -29,7 +29,8 @@ button{
   cursor: pointer;
   border-radius: 12px;
 }
-
+/** removing blue outline when highlighted**/
+button:focus {outline:0;}
 .next-button{
   position: fixed;
   bottom: 10%;

@@ -33,12 +33,11 @@ function addGroup(){
     group.append(groupTitle);
     addTextField(groupTitleId, "Group Name ");
 
-    var removeButton = document.createElement("BUTTON");
+    var removeButton = document.createElement("IMG");
     removeButton.setAttribute("class", "removeButton");
-    removeButton.innerHTML =  "x";
+    removeButton.setAttribute ("src", 'img/remove.png');
     removeButton.onclick = function(){removeGroup(elementId);}
     groupTitle.appendChild(removeButton);
-
     //initializing with a single person
     addPerson(elementId);
 
@@ -78,9 +77,9 @@ function addPerson(groupId, addButton){
     //Person Relationship Field
     addTextField(personId,"Relationship ");
     //adding a remove person button
-    var removeButton = document.createElement("BUTTON");
+    var removeButton = document.createElement("IMG");
     removeButton.setAttribute("class", "removeButton");
-    removeButton.innerHTML =  "x";
+    removeButton.setAttribute ("src", 'img/remove.png');
     removeButton.onclick = function(){removePerson(groupId, personId);}
     person.appendChild(removeButton);
 

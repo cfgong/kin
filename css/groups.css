@@ -14,17 +14,24 @@ div.group, #addGroupButton{
     margin: 5px;
     width: 400px;
 }
-button.removeButton{
+.removeButton{
   opacity: 0.3;
-  transition: opacity .6s;/** for fading in and out **/
-  background-color: white;
-  border: none;
-  border-radius: 50%;
+  transition: opacity .5s ease-in;
+  -moz-transition: opacity .5s ease-in;
+  -webkit-transition: opacity .5s ease-in;
+  -o-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+  width: 15px;
+  height: 15px;
   position: absolute;
   right: 1px;
   top: 1px;
+  cursor: pointer;
 }
-button.removeButton:hover{
+.removeButton:hover{
   opacity: 1;
 }
 button.addButton{
@@ -70,5 +77,8 @@ div.person{
     background-color: #4CAF50;
     border-bottom-style:solid;
     position: relative;
-    padding: 10px 0px;
+    height: 55px;
+    display: flex;
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;
 }
