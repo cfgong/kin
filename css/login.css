@@ -5,8 +5,11 @@ body {
   background: linear-gradient(to right bottom, var(--dark-orange), var(--gold));
   font-family: 'Avenir';
 }
-input {
-    margin: 8px;
+input[type="text"], input[type="password"] {
+  height: 40px;
+  font-size: 70%;
+  margin: 8px;
+  padding: 8px;
 }
 
 .login-header h1 {

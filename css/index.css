@@ -30,18 +30,8 @@ h2, h3, h4{
     font-weight: 500;
 }
 
-input[type="text"], input[type="password"] {
-  height: 40px;
-  font-size: 70%;
-  margin: 8px;
-  padding: 8px;
-}
-
-
 input {
-    font-size: 85%;
-    padding: 8px;
-    margin: 10px;
+    font-size: 70%;
     border: 1px solid var(--offwhite);
     border-radius: 4px;
 }
