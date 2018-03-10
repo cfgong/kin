@@ -19,15 +19,9 @@ h2, h3, h4{
     text-align: center;
     font-weight: 500;
 }
-
 input {
-  height: 30px;
-  font-size: 70%;
-  margin: 8px;
-  padding: 8px;
-}
-
-input .text {
+    font-size: 70%;
+    padding: 8px;
     color: white;
 }
 

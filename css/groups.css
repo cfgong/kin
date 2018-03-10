@@ -19,6 +19,7 @@ button.removeButton{
   background-color: white;
   border: none;
   border-radius: 50%;
+  float: right;
 }
 button.addButton{
   text-decoration: none;
@@ -35,19 +36,14 @@ button.addButton{
 
 div.person{
     background-color: var(--color1);
-    border-top-style: solid;
     border-bottom-style:solid;
-    border-color: gray;
-    padding: 10px;
-    margin: 5px;
-}
-input{
-    margin: 0px 10px;
+    border-color: black;
 }
 .addButton{
     margin: 5px auto;
     display: block;
 }
+
 #groups{
     display: inline-block;
     overflow-x: scroll;
@@ -57,8 +53,12 @@ input{
     margin: 0 1em;
 
     white-space: nowrap;
+    text-align: center;
+}
+#groups input{
+
 }
 .groupTitle{
     background-color: #4CAF50;
-    padding: 15px;
+    border-bottom-style:solid;
 }

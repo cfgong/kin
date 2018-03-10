@@ -5,6 +5,9 @@ body {
   background: linear-gradient(to right bottom, #FF6F00, #FFCA28);
   font-family: 'Avenir';
 }
+input {
+    margin: 8px;
+}
 
 .login-header h1 {
   margin-top: 10%;

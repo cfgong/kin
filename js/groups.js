@@ -20,6 +20,7 @@ function addGroup(){
     var group = document.createElement("div");
     group.setAttribute('class', "group");
     group.setAttribute('id', elementId);
+    group.setAttribute('person_count', 1);
 
     //document.getElementById("groups").append(group);
     var addGroupButton = document.getElementById("addGroupButton");
@@ -72,13 +73,6 @@ function addPerson(groupId, addButton){
     person.setAttribute("id", personId);
     group.insertBefore(person, addButton);
 
-    //Person Name field
-    addTextField(personId,"Name: ");
-    person.innerHTML += "<br>";
-
-    //Person Relationship Field
-    addTextField(personId,"Relationship: ");
-
     //adding a remove person button
     var removeButton = document.createElement("BUTTON");
     removeButton.setAttribute("class", "removeButton");
@@ -86,6 +80,12 @@ function addPerson(groupId, addButton){
     removeButton.onclick = function(){removePerson(groupId, personId);}
     person.appendChild(removeButton);
 
+    //Person Name field
+    addTextField(personId,"Name: ");
+    //Person Relationship Field
+    person.innerHTML += "<br>";
+    addTextField(personId,"Relationship: ");
+    group.setAttribute('person_count',p+1);
 }
 function removePerson(parentId, personId){
     parent = document.getElementById(parentId);
