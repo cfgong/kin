@@ -1,38 +1,36 @@
 /**
 Global CSS
 **/
-/** color variables**/
-:root{
-    --medium-orange: #FFA000;
-    --gold: #FFC107;
-    --pale-orange: #FFECB3;
-    --blue-black: #37474F;
-    --blue-gray: #78909C;
-    --offwhite: #ECEFF1;
-    --blue: #0091EA;
-    --green: #00C853;
-    --yellow: #FFD600;
-    --dark-orange: #FF6D00;
-}
+
 body, div, button, p{
    font-family: 'Avenir', sans-serif;
 }
 h1{
     font-family: 'Avenir', sans-serif;
-    color: var(--gold);
+    color: #FFC107;
     text-align: center;
     margin-bottom: 10px;
 }
 h2, h3, h4{
     font-family: 'Avenir', sans-serif;
-    color: var(--blue-black);
+    color: #37474F;
     text-align: center;
     font-weight: 500;
 }
 
+input[type="text"], input[type="password"] {
+  height: 40px;
+  font-size: 70%;
+  margin: 8px;
+  padding: 8px;
+}
+
+
 input {
-    font-size: 70%;
-    border: 1px solid var(--offwhite);
+    font-size: 85%;
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #ECEFF1;
     border-radius: 4px;
 }
 
@@ -41,12 +39,14 @@ button{
   font-family: 'Avenir';
   text-decoration: none;
 }
-/** removing blue outline when highlighted**/
+
 button:focus {outline:0;}
 
 .next-button:hover {
-    background-color: var(--medium-orange);
+    background-color: #FFB300;
 }
+/** removing blue outline when highlighted**/
+
 
 .next-button, .back-button {
   border-radius: 21px;
@@ -61,7 +61,7 @@ button:focus {outline:0;}
 .next-button {
   bottom: 10%;
   right: 5%;
-  background-color: var(--gold);
+  background-color: #FFC107;
   border: none;
   color: white;
 }
@@ -70,13 +70,13 @@ button:focus {outline:0;}
     bottom: 10%;
     left: 5%;
     background-color: white;
-    border: 2px solid var(--gold);
-    color: var(--gold);
+    border: 2px solid #FFC107;
+    color: #FFC107;
     text-decoration: none;
     margin: 4px 2px;
 }
 
 .back-button:hover {
-    background-color: var(--gold);
+    background-color: #FFC107; 
     color: white;
 }
