@@ -39,8 +39,9 @@ input[type=submit]:hover {
 }
 
 input::placeholder {
-    color: #B0BEC5;
+    color: #E0E0E0;
     font-weight: 100;
+    font-family: 'Avenir';
 }
 
 .login-form {
