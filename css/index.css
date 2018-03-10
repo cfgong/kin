@@ -1,9 +1,7 @@
 /**
 Global CSS
 **/
-:root{
-    --color1: #78909C;
-}
+
 body, div, button, p{
    font-family: 'Avenir', sans-serif;
 }
@@ -20,30 +18,39 @@ h2, h3, h4{
     font-weight: 500;
 }
 
-input {
+input[type="text"], input[type="password"] {
   height: 30px;
   font-size: 70%;
   margin: 8px;
   padding: 8px;
 }
 
-input .text {
-    color: white;
+input[type=text]:focus {
+  border: 3px solid #FFC107;
 }
 
 button{
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 21px;
+  border: none;
+  font-family: 'Avenir';
+  font-weight: 600px;
+  font-size: 14px;
+  color: #37474F;
+}
+
+button:hover {
+    background-color: #FFB300;
 }
 
 .next-button{
   position: fixed;
   bottom: 10%;
   right: 5%;
-  background-color: var(--color1);
-  color: #FFC107;
+  background-color: #FFC107;
   border: none;
   color: white;
+  font-size: 14px;
   padding: 16px 32px;
   text-decoration: none;
   margin: 4px 2px;
@@ -54,13 +61,12 @@ button{
     position: fixed;;
     bottom: 10%;
     left: 5%;
-    background-color: var(--color1);
+    background-color: #FFC107;
     color: white;
-
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
+    border: none;
+    font-size: 14px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
