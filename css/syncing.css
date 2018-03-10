@@ -27,7 +27,7 @@ h3 {
   margin-left: 30%;
   width: 150px;
   height: 75px;
-  border: 3px solid #4CAF50;
+  border: 3px solid var(--green);
 }
 
 #phone{
@@ -38,7 +38,7 @@ h3 {
   float: left;
   width: 150px;
   height: 75px;
-  border: 3px solid #4CAF50;
+  border: 3px solid var(--green);
 }
 #Whatsapp{
   background-color: white;
@@ -48,7 +48,7 @@ h3 {
   float: left;
   width: 150px;
   height: 75px;
-  border: 3px solid #4CAF50;
+  border: 3px solid var(--green);
 }
 #Slack{
   background-color: white;
@@ -58,7 +58,7 @@ h3 {
   float: left;
   width: 150px;
   height: 75px;
-  border: 3px solid #4CAF50;
+  border: 3px solid var(--green);
 }
 #Wechat{
   background-color: white;
@@ -68,7 +68,7 @@ h3 {
   float: left;
   width: 150px;
   height: 75px;
-  border: 3px solid #4CAF50;
+  border: 3px solid var(--green);
 }
 #email{
   background-color: white;
@@ -78,5 +78,5 @@ h3 {
   float: left;
   width: 150px;
   height: 75px;
-  border: 3px solid #4CAF50;
+  border: 3px solid var(--green);
 }
