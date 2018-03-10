@@ -20,6 +20,7 @@ function addGroup(){
     var group = document.createElement("div");
     group.setAttribute('class', "group");
     group.setAttribute('id', elementId);
+    group.setAttribute('person_count', 1);
 
     //document.getElementById("groups").append(group);
     var addGroupButton = document.getElementById("addGroupButton");
@@ -30,14 +31,13 @@ function addGroup(){
     groupTitleId = elementId+"-groupTitle";
     groupTitle.setAttribute("id", groupTitleId);
     group.append(groupTitle);
-    addTextField(groupTitleId, "Group Name: ");
+    addTextField(groupTitleId, "Group Name ");
 
-    var removeButton = document.createElement("BUTTON");
+    var removeButton = document.createElement("IMG");
     removeButton.setAttribute("class", "removeButton");
-    removeButton.innerHTML =  "x";
+    removeButton.setAttribute ("src", 'img/remove.png');
     removeButton.onclick = function(){removeGroup(elementId);}
     groupTitle.appendChild(removeButton);
-
     //initializing with a single person
     addPerson(elementId);
 
@@ -71,21 +71,19 @@ function addPerson(groupId, addButton){
     person.setAttribute("class", "person");
     person.setAttribute("id", personId);
     group.insertBefore(person, addButton);
-
     //Person Name field
-    addTextField(personId,"Name: ");
+    addTextField(personId,"Name ");
     person.innerHTML += "<br>";
-
     //Person Relationship Field
-    addTextField(personId,"Relationship: ");
-
+    addTextField(personId,"Relationship ");
     //adding a remove person button
-    var removeButton = document.createElement("BUTTON");
+    var removeButton = document.createElement("IMG");
     removeButton.setAttribute("class", "removeButton");
-    removeButton.innerHTML =  "x";
+    removeButton.setAttribute ("src", 'img/remove.png');
     removeButton.onclick = function(){removePerson(groupId, personId);}
     person.appendChild(removeButton);
 
+    group.setAttribute('person_count',p+1);
 }
 function removePerson(parentId, personId){
     parent = document.getElementById(parentId);

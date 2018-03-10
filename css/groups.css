@@ -1,24 +1,48 @@
 @import "index.css";
 @import url("index.css");
 
+:root{
+    --group_width: 400px;
+}
 #groupsprog{
   display:block;
   margin: 0 auto;
 }
 
-div.group, #addGroupButton{
+div.group {
     border-style: solid;
     border-color: black;
     display: inline-block;
     vertical-align: top;
     margin: 5px;
-    width: 400px;
+    width: var(--group_width);
 }
-button.removeButton{
-  text-decoration: none;
-  background-color: white;
-  border: none;
-  border-radius: 50%;
+#addGroupButton{
+    border-style: solid;
+    border-color: black;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+}
+.removeButton{
+  opacity: 0.3;
+  transition: opacity .5s ease-in;
+  -moz-transition: opacity .5s ease-in;
+  -webkit-transition: opacity .5s ease-in;
+  -o-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  cursor: pointer;
+}
+.removeButton:hover{
+  opacity: 1;
 }
 button.addButton{
   text-decoration: none;
@@ -26,28 +50,18 @@ button.addButton{
   border: none;
 }
 
-#addGroupButton{
-  text-align:center;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-}
-
 div.person{
     background-color: var(--color1);
-    border-top-style: solid;
     border-bottom-style:solid;
-    border-color: gray;
-    padding: 10px;
-    margin: 5px;
-}
-input{
-    margin: 0px 10px;
+    border-color: black;
+    position: relative;
+    padding: 10px 0px;
 }
 .addButton{
     margin: 5px auto;
     display: block;
 }
+
 #groups{
     display: inline-block;
     overflow-x: scroll;
@@ -57,8 +71,18 @@ input{
     margin: 0 1em;
 
     white-space: nowrap;
+    text-align: center;
+}
+#groups input{
+    width: 200px;
 }
 .groupTitle{
     background-color: #4CAF50;
-    padding: 15px;
+    border-bottom-style:solid;
+    position: relative;
+    height: 55px;
+    display: inline-flex;
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;
+    width: var(--group_width);
 }
