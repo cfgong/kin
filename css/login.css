@@ -30,7 +30,7 @@ input[type="text"], input[type="password"] {
 }
 
 .login-box {
-  color: var(--blue-black);
+  color: var(--black);
   margin: auto;
   width: 75%;
   padding: 10px;

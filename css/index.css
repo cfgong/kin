@@ -4,51 +4,63 @@ Global CSS
 **/
 /** color variables**/
 :root{
+    --fire-orange: #FF6D00;
+    --dark-orange: #FF8F00;
     --medium-orange: #FFA000;
     --gold: #FFC107;
     --pale-orange: #FFECB3;
-    --blue-black: #37474F;
+    --black: #212121;
     --gray: #E0E0E0;
-    --offwhite: #ECEFF1;
+    --light-gray: #BDBDBD;
+    --offwhite: #EEEEEE;
     --blue: #0091EA;
     --green: #00C853;
-    --yellow: #FFD600;
-    --dark-orange: #FF6D00;
+    --yellow: #FFEB3B;
 }
 body, div, button, p{
    font-family: 'Avenir', sans-serif;
 }
+
 h1{
     font-family: 'Avenir', sans-serif;
-    color: var(--gold);
+    color: var(--medium-orange);
     text-align: left;
     margin: 10px 10%;
 }
 h2, h3, h4{
     font-family: 'Avenir', sans-serif;
-    color: var(--blue-black);
+    color: var(--black);
     text-align: left;
     margin: 5px 10%;
     font-weight: 500;
 }
 
+.progress-indicator{
+   width: 100%;
+   height: 80px;
+   background-color: var(--dark-orange);
+   align-content: center;
+   margin: 0px;
+}
+
 input[type="text"], input[type="password"] {
   height: 40px;
-  font-size: 14px;
   margin: 8px;
-  padding: 8px;
+  padding: 4px;
 }
 
 input {
-    font-size: 80%;
+    font-size: 14px;
     padding: 4px;
-    border: 1px solid var(--offwhite);
+    border: none;
     margin: 10px;
     border-radius: 4px;
 }
 input::placeholder {
-    color: var(--gray);
+    color: $757575;
     font-weight: 100;
+    font-family: Avenir;
+    font-size: 14px;
 }
 
 button{

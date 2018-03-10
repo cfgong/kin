@@ -4,7 +4,7 @@
 /*STATUS BAR*/
 div.group{
     border: solid 1px;
-    border-color: var(--blue-black);
+    border-color: var(--black);
     display: inline-block;
     width: 150px;
     vertical-align: top;
@@ -27,7 +27,7 @@ button{
   margin-top: 20px;
   margin-left: 50px;
   font-family: 'Avenir';
-  color: var(--blue-black);
+  color: var(--black);
 }
 
 body {
