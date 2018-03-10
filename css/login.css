@@ -27,7 +27,7 @@ input {
 }
 
 .login-box {
-  color: #37474F;
+  color: var(--color4);
   margin: auto;
   width: 75%;
   padding: 10px;
@@ -57,7 +57,7 @@ input::placeholder {
   font-family: 'Avenir';
   font-weight: 500;
   font-size: 14px;
-  color: #37474F;
+  color: var(--color4);
   padding: 10px 40px;
   text-decoration: none;
   margin: 30px 2px;

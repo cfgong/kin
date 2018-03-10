@@ -1,19 +1,31 @@
 /**
 Global CSS
 **/
-
+/** do not delete this line**/
+:root{
+    --color1: #FFA000; /** dark orange **/
+    --color2: #FFC107;
+    --color3: #FFECB3;
+    --color4: #37474F;
+    --color5: #78909C;
+    --color6: #ECEFF1;
+    --color7: #0091EA;
+    --color8: #00C853;
+    --color9: #FFD600;
+    --color10: #FF6D00;
+}
 body, div, button, p{
    font-family: 'Avenir', sans-serif;
 }
 h1{
     font-family: 'Avenir', sans-serif;
-    color: #FFC107;
+    color: var(--color2);
     text-align: center;
     margin-bottom: 10px;
 }
 h2, h3, h4{
     font-family: 'Avenir', sans-serif;
-    color: #37474F;
+    color: var(--color4);
     text-align: center;
     font-weight: 500;
 }
@@ -30,7 +42,7 @@ input {
     font-size: 85%;
     padding: 8px;
     margin: 10px;
-    border: 1px solid #ECEFF1;
+    border: 1px solid var(--color6);
     border-radius: 4px;
 }
 
@@ -39,14 +51,12 @@ button{
   font-family: 'Avenir';
   text-decoration: none;
 }
-
+/** removing blue outline when highlighted**/
 button:focus {outline:0;}
 
 .next-button:hover {
-    background-color: #FFB300;
+    background-color: var(--color1);
 }
-/** removing blue outline when highlighted**/
-
 
 .next-button, .back-button {
   border-radius: 21px;
@@ -61,7 +71,7 @@ button:focus {outline:0;}
 .next-button {
   bottom: 10%;
   right: 5%;
-  background-color: #FFC107;
+  background-color: var(--color2);
   border: none;
   color: white;
 }
@@ -70,13 +80,13 @@ button:focus {outline:0;}
     bottom: 10%;
     left: 5%;
     background-color: white;
-    border: 2px solid #FFC107;
-    color: #FFC107;
+    border: 2px solid var(--color2);
+    color: var(--color2);
     text-decoration: none;
     margin: 4px 2px;
 }
 
 .back-button:hover {
-    background-color: #FFC107; 
+    background-color: var(--color2);
     color: white;
 }

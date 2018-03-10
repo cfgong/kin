@@ -17,7 +17,7 @@ body {
 }
 
 .back-layer-2 {
-  background-color: #78909C; /*should be a darker grye*/
+  background-color: var(--color5); /*should be a darker grye*/
   border: 1px solid black;
   color: white;
   width: 70%;

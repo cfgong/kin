@@ -10,11 +10,9 @@ div.group{
     vertical-align: top;
     margin: 3px;
     height: 200px;
-    /* margin-right: 50px; */
 }
 span.days{
   float: right;
-
 }
 .svg{
   width: 20px;
@@ -29,19 +27,11 @@ button{
   margin-top: 20px;
   margin-left: 50px;
   font-family: 'Avenir';
-  color: #37474f;
-  /* color: #37474f; */
+  color: var(--color4);
 }
-#info {
-  font-family: 'Avenir';
-  color: #37474f;
-  font-size: 15px;
-}
-#info, #healthBar {
-  display: inline-block;
-}
+
 body {
-  background-color: #ECEFF1
+  background-color: var(--color6);
 }
 
 #groups{
@@ -52,7 +42,6 @@ body {
     width: 630px;
     height: 210px;
     background-color: white;
-    margin-right: 50px;
 }
 .groupTitle{
     text-align: center;
@@ -73,11 +62,11 @@ body {
 .healthBarClass {
   display: inline-block;
   /* float: left; */
-  border: 1px solid #37474f;
+  border: 1px solid var(--color4);
   width: 35%;
   height: 210px;
   margin-left: 50px;
-  /* margin-top: 10px; */
+  margin-top: 20px;
   background-color: white;
 }
 
@@ -89,7 +78,7 @@ body {
   margin-right: 65px;
   margin-top: 25px;
   float: right;
-  background-color: #ECEFF1;
+  background-color: var(--color6);
 }
 
 .barName {
@@ -97,35 +86,26 @@ body {
   float: left;
   margin-left: 25px;
   margin-top: 20px;
-  color: #37474f;
+  color: var(--color4);
   font-family: 'Avenir'
 /* >>>>>>> 998e964f983fd840e1d55bea2efe631ec4b75f6d */
-}
-
-#edit-groups {
-  margin-top: 50px;
-  margin-left: 50px;
-  /* text-align: left; */
-  border:1px solid lightgray;
-  color: #37474f;
-  font-family: 'Avenir'
 }
 
 #mynetwork {
   width: 800px;
   height: 600px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--color5);
   margin-left: 50px;
-  /* margin-top: 50px; */
+  margin-top: 50px;
 }
 
 
 .network-display {
   height: 600px;
   width: 450px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--color5);
   margin-right: 60px;
-  /* margin-top: 50px; */
+  margin-top: 50px;
   float: right;
 }
 #mynetwork, .network-display {
@@ -137,7 +117,7 @@ body {
   font-weight: bold;
   margin-left: 10px;
   margin-top: 10px;
-  color: #37474f;
+  color: var(--color4);
   font-family: 'Nunito'
 }
 
@@ -145,7 +125,7 @@ body {
   font-size: 36px;
   margin-left: 10px;
   margin-top: 10px;
-  color: #37474f;
+  color: var(--color4);
   font-family: 'Nunito'
 }
 
@@ -158,14 +138,14 @@ body {
   font-weight: bold;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: #37474f;
+  color: var(--color4);
   font-family: 'Nunito'
 }
 #inputGroup {
   font-size: 36px;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: #37474f;
+  color: var(--color4);
   font-family: 'Nunito'
 }
 
@@ -178,14 +158,14 @@ body {
   font-weight: bold;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: #37474f;
+  color: var(--color4);
   font-family: 'Nunito'
 }
 #inputFrequency {
   font-size: 36px;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: #37474f;
+  color: var(--color4);
   font-family: 'Nunito'
 }
 
@@ -198,14 +178,14 @@ body {
   font-weight: bold;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: #37474f;
+  color: var(--color4);
   font-family: 'Nunito'
 }
 #inputHealth {
   font-size: 36px;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: #37474f;
+  color: var(--color4);
   font-family: 'Nunito'
 }
 
@@ -218,14 +198,14 @@ body {
   font-weight: bold;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: #37474f;
+  color: var(--color4);
   font-family: 'Nunito'
 }
 #inputContact {
   font-size: 36px;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: #37474f;
+  color: var(--color4);
   font-family: 'Nunito'
 }
 

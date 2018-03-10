@@ -77,7 +77,7 @@ div.person{
     width: 200px;
 }
 .groupTitle{
-    background-color: #4CAF50;
+    background-color: var(--color9);
     border-bottom-style:solid;
     position: relative;
     height: 55px;
