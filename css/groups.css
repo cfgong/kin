@@ -1,18 +1,28 @@
 @import "index.css";
 @import url("index.css");
 
+:root{
+    --group_width: 400px;
+}
 #groupsprog{
   display:block;
   margin: 0 auto;
 }
 
-div.group, #addGroupButton{
+div.group {
     border-style: solid;
     border-color: black;
     display: inline-block;
     vertical-align: top;
     margin: 5px;
-    width: 400px;
+    width: var(--group_width);
+}
+#addGroupButton{
+    border-style: solid;
+    border-color: black;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
 }
 .removeButton{
   opacity: 0.3;
@@ -38,13 +48,6 @@ button.addButton{
   text-decoration: none;
   background-color: white;
   border: none;
-}
-
-#addGroupButton{
-  text-align:center;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
 }
 
 div.person{
@@ -78,7 +81,8 @@ div.person{
     border-bottom-style:solid;
     position: relative;
     height: 55px;
-    display: flex;
+    display: inline-flex;
     justify-content: center; /* center items horizontally, in this case */
     align-items: center;
+    width: var(--group_width);
 }
