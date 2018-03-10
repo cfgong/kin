@@ -20,20 +20,19 @@ h2, h3, h4{
 <<<<<<< HEAD
 
 input[type="text"], input[type="password"] {
-  height: 30px;
+  height: 40px;
   font-size: 70%;
   margin: 8px;
   padding: 8px;
 }
 
-input[type=text]:focus {
-  border: 3px solid #FFC107;
-=======
+
 input {
-    font-size: 70%;
+    font-size: 85%;
     padding: 8px;
-    color: white;
->>>>>>> 7829dfc2d5eae3ee0f933e26c5e36a556b30cf44
+    margin: 10px;
+    border: 1px solid #ECEFF1;
+    border-radius: 4px;
 }
 
 button{
