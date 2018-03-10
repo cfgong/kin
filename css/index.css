@@ -17,6 +17,7 @@ h2, h3, h4{
     text-align: center;
     font-weight: 500;
 }
+<<<<<<< HEAD
 
 input[type="text"], input[type="password"] {
   height: 30px;
@@ -27,6 +28,12 @@ input[type="text"], input[type="password"] {
 
 input[type=text]:focus {
   border: 3px solid #FFC107;
+=======
+input {
+    font-size: 70%;
+    padding: 8px;
+    color: white;
+>>>>>>> 7829dfc2d5eae3ee0f933e26c5e36a556b30cf44
 }
 
 button{
@@ -42,7 +49,8 @@ button{
 button:hover {
     background-color: #FFB300;
 }
-
+/** removing blue outline when highlighted**/
+button:focus {outline:0;}
 .next-button{
   position: fixed;
   bottom: 10%;
