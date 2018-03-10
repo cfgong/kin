@@ -21,7 +21,7 @@ div.group {
     border-style: solid;
     border-color: black;
     margin: 5px;
-    color: white;
+    color: var(--offwhite);
     cursor: pointer;
 }
 .removeButton{
@@ -51,7 +51,7 @@ button.addButton{
 }
 
 div.person{
-    background-color: var(--color1);
+    background-color: var(--blue-black);
     border-bottom-style:solid;
     border-color: black;
     position: relative;
@@ -77,7 +77,7 @@ div.person{
     width: 200px;
 }
 .groupTitle{
-    background-color: var(--color9);
+    background-color: var(--green);
     border-bottom-style:solid;
     position: relative;
     height: 55px;
