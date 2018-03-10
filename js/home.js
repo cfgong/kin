@@ -1,4 +1,5 @@
 var people = ["Ryan", "Justin", "Joey", "Misha", "Vincent", "Karen", "Kaori", "Evegenia"];
+var healthBarIds = ["familyHealth","friendHealth","workHealth", "campHealth"];
 var images = [];
 var days = [];
 var lastPerson = 0;
@@ -198,37 +199,36 @@ function addOverduePerson(i){
     var removeButton = document.createElement("BUTTON");
     //removeButton.innerHTML =  "Remove";
     removeButton.innerHTML =  "<i class = 'material-icons' class='svg'>check_circle</i> <br> Contacted";
-    removeButton.onclick = function(){removeGroup(groupId, lastPerson);}
+    removeButton.onclick = function(){removeGroup(groupId, lastPerson, true);}
     group.appendChild(removeButton);
 
     //adding a postpone button
     var removeButton = document.createElement("BUTTON");
     removeButton.innerHTML =  "<img src ='img/postpone.svg' class = 'svg'><br>Postpone";
-    removeButton.onclick = function(){postponeGroup(groupId, lastPerson);}
+    removeButton.onclick = function(){postponeGroup(groupId, lastPerson, false);}
     group.appendChild(removeButton);
 }
 function addUpcomingPerson(i){
     var groupId = addPerson(i, "UPCOMING");
 }
-function removeGroup(elementId, i){
+// generate a random integer, inclusive
+function randInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
+function removeGroup(elementId, i, contacted){
     element = document.getElementById(elementId);
     element.remove(elementId);
-    document.getElementById("friendHealth").style.width = document.getElementById("friendHealth").style.width + '5%'
+    if (contacted){
+      var healthNum = randInt(0, healthBarIds.length-1);
+      var currHealth =parseInt(document.getElementById(healthBarIds[healthNum]).style.width);
+      var newHealth = currHealth + 5+"%";
+      document.getElementById(healthBarIds[healthNum]).style.width = newHealth;
+    }
     lastPerson++;
     addUpcomingPerson(lastPerson);
+    //<div class="w3-green w3-round-xlarge" id="familybar" style="height:18px;width:75%"></div>
 
-    /**
-    if (lastPerson >= max){
-        lastPerson = 0;
-    }
-    addPerson(lastPerson);
-    lastPerson++;
-
-    if (lastPerson<max){
-        addPerson(lastPerson);
-        lastPerson++;
-    }
-    **/
 }
 function postponeGroup(elementId, i){
     prompt('How many days would you like to postpone?', 1);
