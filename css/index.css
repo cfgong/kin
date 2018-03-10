@@ -17,7 +17,6 @@ h2, h3, h4{
     text-align: center;
     font-weight: 500;
 }
-<<<<<<< HEAD
 
 input[type="text"], input[type="password"] {
   height: 40px;
@@ -37,43 +36,47 @@ input {
 
 button{
   cursor: pointer;
-  border-radius: 21px;
-  border: none;
   font-family: 'Avenir';
-  font-weight: 600px;
-  font-size: 14px;
-  color: #37474F;
+  text-decoration: none;
 }
 
-button:hover {
+button:focus {outline:0;}
+
+.next-button:hover {
     background-color: #FFB300;
 }
 /** removing blue outline when highlighted**/
-button:focus {outline:0;}
-.next-button{
+
+
+.next-button, .back-button {
+  border-radius: 21px;
   position: fixed;
+  font-weight: 500px;
+  font-size: 14px;
+  padding: 10px 40px;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+
+.next-button {
   bottom: 10%;
   right: 5%;
   background-color: #FFC107;
   border: none;
   color: white;
-  font-size: 14px;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
 }
 
 .back-button{
-    position: fixed;;
     bottom: 10%;
     left: 5%;
-    background-color: #FFC107;
-    color: white;
-    border: none;
-    font-size: 14px;
-    padding: 16px 32px;
+    background-color: white;
+    border: 2px solid #FFC107;
+    color: #FFC107;
     text-decoration: none;
     margin: 4px 2px;
-    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #FFC107; 
+    color: white;
 }
