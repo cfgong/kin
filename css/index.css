@@ -1,38 +1,44 @@
+
 /**
 Global CSS
 **/
-
+/** color variables**/
+:root{
+    --medium-orange: #FFA000;
+    --gold: #FFC107;
+    --pale-orange: #FFECB3;
+    --blue-black: #37474F;
+    --gray: #E0E0E0;
+    --offwhite: #ECEFF1;
+    --blue: #0091EA;
+    --green: #00C853;
+    --yellow: #FFD600;
+    --dark-orange: #FF6D00;
+}
 body, div, button, p{
    font-family: 'Avenir', sans-serif;
 }
 h1{
     font-family: 'Avenir', sans-serif;
-    color: #FFC107;
+    color: var(--gold);
     text-align: left;
     margin: 10px 10%;
 }
 h2, h3, h4{
     font-family: 'Avenir', sans-serif;
-    color: #37474F;
+    color: var(--blue-black);
     text-align: left;
-    margin: 5px 10%;
-    font-weight: 500;
+    font-weight: 5px 10%;
 }
-
-input[type="text"], input[type="password"] {
-  height: 40px;
-  font-size: 70%;
-  margin: 8px;
-  padding: 8px;
-}
-
 
 input {
-    font-size: 85%;
-    padding: 8px;
-    margin: 10px;
-    border: 1px solid #ECEFF1;
+    font-size: 70%;
+    border: 1px solid var(--offwhite);
     border-radius: 4px;
+}
+input::placeholder {
+    color: var(--gray);
+    font-weight: 100;
 }
 
 button{
@@ -40,14 +46,12 @@ button{
   font-family: 'Avenir';
   text-decoration: none;
 }
-
+/** removing blue outline when highlighted**/
 button:focus {outline:0;}
 
 .next-button:hover {
-    background-color: #FFB300;
+    background-color: var(--medium-orange);
 }
-/** removing blue outline when highlighted**/
-
 
 .next-button, .back-button {
   border-radius: 21px;
@@ -62,7 +66,7 @@ button:focus {outline:0;}
 .next-button {
   bottom: 10%;
   right: 5%;
-  background-color: #FFC107;
+  background-color: var(--gold);
   border: none;
   color: white;
 }
@@ -71,13 +75,13 @@ button:focus {outline:0;}
     bottom: 10%;
     left: 5%;
     background-color: white;
-    border: 2px solid #FFC107;
-    color: #FFC107;
+    border: 2px solid var(--gold);
+    color: var(--gold);
     text-decoration: none;
     margin: 4px 2px;
 }
 
 .back-button:hover {
-    background-color: #FFC107; 
+    background-color: var(--gold);
     color: white;
 }
