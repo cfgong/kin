@@ -1,9 +1,9 @@
 /**
 Global CSS
 **/
-/** do not delete this line**/
+/** color variables**/
 :root{
-    --medium-orange: #FFA000; /** dark orange **/
+    --medium-orange: #FFA000;
     --gold: #FFC107;
     --pale-orange: #FFECB3;
     --blue-black: #37474F;
