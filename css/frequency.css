@@ -23,12 +23,14 @@ body {
 }
 .group-name {
   float: left;
-  font-family: 'Nunito'
+  font-family: 'Avenir';
+  color: var(--black);
+  font-weight: 500;
 }
 
 .individual-name {
   float: left;
-  font-family: 'Nunito'
+  font-family: 'Avenir'
 }
 
 .frequency-opt {
@@ -36,7 +38,7 @@ body {
   border: 1px solid black;
   font-size: 16px;
   padding: 5px;
-  font-family: 'Nunito';
+  font-family: 'Avenir';
   background-color: white; /*ECEFF1*/
 }
 .frequency-opt-row {
@@ -46,7 +48,7 @@ body {
 }
 
 .group-frequency {
-  color: var(--blue-black);
+  color: var(--black);
   background-color: white;
   /* margin: 20px; */
   font-size: 16px;
