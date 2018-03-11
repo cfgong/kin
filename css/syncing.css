@@ -9,12 +9,17 @@
   width: 60%;
 }
 
-
-.application_box {
-  margin-bottom: 3%;
+.application_box1 {
+  margin-top: 20px;
+  margin-bottom: auto;
   width: 100%;
   display: inline-block;
+}
 
+.application_box2 {
+  margin-bottom: 30px;
+  width: 100%;
+  display: inline-block;
 }
 
 #facebook, #phone, #whatsapp, #slack, #wechat, #email{

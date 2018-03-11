@@ -6,7 +6,10 @@
 }
 #groupsprog{
   display:block;
-  margin: 0 auto;
+  margin:  auto;
+  padding: 16px;
+  height: 60%;
+  width: 60%;
 }
 
 div.group {

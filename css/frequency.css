@@ -4,16 +4,13 @@
 body {
   background-color: white;
 }
+
 #frequency{
   display:block;
-  margin: 0 auto;
-}
-.back-layer-1 {
-  /* background-color: grey; */
-  width: 100%;
-  text-align: center;
-
-  /* background-position: center; */
+  margin:  auto;
+  padding: 16px;
+  height: 60%;
+  width: 60%;
 }
 
 .back-layer-2 {
