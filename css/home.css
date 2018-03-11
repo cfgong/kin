@@ -40,6 +40,8 @@ body {
     float: right;
     width: 630px;
     height: 210px;
+    margin-right: 60px;
+    margin-top: 15px;
     background-color: white;
 }
 .groupTitle{
