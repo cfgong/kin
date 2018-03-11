@@ -38,6 +38,7 @@ h2, h3, h4{
     margin: 5px 10%;
     font-weight: 400;
     font-size: 16px;
+    line-height: 26px;
 }
 
 .progress-indicator{
@@ -106,7 +107,6 @@ button:focus {outline:0;}
     border: 2px solid var(--medium-orange);
     color: var(--medium-orange);
     text-decoration: none;
-    margin: 4px 2px;
 }
 
 .back-button:hover {
