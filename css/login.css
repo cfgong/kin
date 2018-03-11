@@ -2,7 +2,7 @@
 @import url("index.css");
 
 body {
-  background: linear-gradient(to right bottom, var(--dark-orange), var(--gold));
+  background: linear-gradient(to right bottom, var(--fire-orange), var(--gold));
   font-family: 'Avenir';
 }
 input[type="text"], input[type="password"] {
