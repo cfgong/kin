@@ -1,5 +1,4 @@
 var people = ["Ryan", "Justin", "Joey", "Misha", "Vincent", "Karen", "Kaori", "Evegenia"];
-var healthBarIds = ["familyHealth","friendHealth","workHealth", "campHealth"];
 var images = [];
 var days = [];
 var lastPerson = 0;
@@ -211,19 +210,14 @@ function addOverduePerson(i){
 function addUpcomingPerson(i){
     var groupId = addPerson(i, "UPCOMING");
 }
-// generate a random integer, inclusive
-function randInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
 
 function removeGroup(elementId, i, contacted){
     element = document.getElementById(elementId);
     element.remove(elementId);
     if (contacted){
-      var healthNum = randInt(0, healthBarIds.length-1);
-      var currHealth =parseInt(document.getElementById(healthBarIds[healthNum]).style.width);
+      var currHealth =parseInt(document.getElementById("friendHealth").style.width);
       var newHealth = currHealth + 5+"%";
-      document.getElementById(healthBarIds[healthNum]).style.width = newHealth;
+      document.getElementById("friendHealth").style.width = newHealth;
     }
     lastPerson++;
     addUpcomingPerson(lastPerson);
