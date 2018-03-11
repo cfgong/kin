@@ -25,20 +25,20 @@ function init(){
     addUpcomingPerson(3);
 //graph
     var nodes = new vis.DataSet([  //change things here to change things for specific Nodes
-      {id: 1, borderWidth: 3, size: 30, color: 'orange', label: 'Me'},
-      {id: 2, color: 'purple', label: 'Family'},
-      {id: 3, color: 'yellow', label: 'Friends'},
-      {id: 4, color: 'green', label: 'Coworkers'},
-      {id: 5,  color: 'purple', label: 'Mom'},
-      {id: 6, color: 'purple', label: 'Dad'},
-      {id: 7, color: 'purple', label: 'Riley'},
-      {id: 14, color: 'purple', label: 'Ana'},
-      {id: 8, color: 'yellow', label: 'Ryan'},
-      {id: 9, color: 'yellow', label: 'Justin'},
-      {id: 10, color: 'yellow', label: 'Joey'},
-      {id: 11, color: 'green', label: 'Pam'},
-      {id: 12, color: 'green', label: 'Jim'},
-      {id: 13, color: 'green', label: 'Dwight'}
+      {id: 1, fixed: true, borderWidth: 3, size: 30, color: '#BDBDBD', label: 'Me'},
+      {id: 2, color: '#BDBDBD', label: 'Family'},
+      {id: 3, color: '#BDBDBD', label: 'Friends'},
+      {id: 4, color: '#BDBDBD', label: 'Coworkers'},
+      {id: 5,  color: '#FFEB3B', label: 'Mom'},
+      {id: 6, color: '#FFA000', label: 'Dad'},
+      {id: 7, color: '#FFEB3B', label: 'Riley'},
+      {id: 14, color: '#00C853', label: 'Ana'},
+      {id: 8, color: '#FFA000', label: 'Ryan'},
+      {id: 9, color: '#FFA000', label: 'Justin'},
+      {id: 10, color: '#FFEB3B', label: 'Joey'},
+      {id: 11, color: '#00C853', label: 'Pam'},
+      {id: 12, color: '#00C853', label: 'Jim'},
+      {id: 13, color: '#FFA000', label: 'Dwight'}
     ]);
 
     // create an array with edges
