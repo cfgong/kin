@@ -4,7 +4,7 @@
 /*STATUS BAR*/
 div.group{
     border: solid 1px;
-    border-color: var(--black);
+    border-color: var(--light-gray);
     display: inline-block;
     width: 150px;
     vertical-align: top;
@@ -61,7 +61,7 @@ body {
 .healthBarClass {
   display: inline-block;
   /* float: left; */
-  border: 1px solid var(--blue-black);
+  border: 1px solid var(--offwhite);
   width: 35%;
   height: 210px;
   margin-left: 50px;
@@ -85,7 +85,7 @@ body {
   float: left;
   margin-left: 25px;
   margin-top: 20px;
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Avenir'
 /* >>>>>>> 998e964f983fd840e1d55bea2efe631ec4b75f6d */
 }
@@ -94,12 +94,13 @@ body {
   margin-top: 50px;
   /* font-family: 'Avenir'; */
   font-size: 14px;
-
+  border: 1px solid var(--light-gray);
 }
 #mynetwork {
   width: 800px;
   height: 600px;
-  border: 1px solid var(--blue-gray);
+  border: 1px solid var(--light-gray);
+
   margin-left: 50px;
   /* margin-top: 50px; */
   background-color: white;
@@ -109,9 +110,10 @@ body {
 .network-display {
   height: 600px;
   width: 450px;
-  border: 1px solid var(--blue-gray);
+  border: 1px solid var(--light-gray);
   margin-right: 60px;
-  margin-top: 50px;
+  background-color: white;
+  /* margin-top: 50px; */
   float: right;
 }
 #mynetwork, .network-display {
@@ -123,7 +125,7 @@ body {
   font-weight: bold;
   margin-left: 10px;
   margin-top: 10px;
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 
@@ -131,7 +133,7 @@ body {
   font-size: 36px;
   margin-left: 10px;
   margin-top: 10px;
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 
@@ -144,14 +146,14 @@ body {
   font-weight: bold;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 #inputGroup {
   font-size: 36px;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 
@@ -164,14 +166,14 @@ body {
   font-weight: bold;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 #inputFrequency {
   font-size: 36px;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 
@@ -184,14 +186,14 @@ body {
   font-weight: bold;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 #inputHealth {
   font-size: 36px;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 
@@ -204,14 +206,14 @@ body {
   font-weight: bold;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 #inputContact {
   font-size: 36px;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 
