@@ -3,75 +3,41 @@
 
 #progress{
   display:block;
-  margin: 0 auto;
+  margin:  auto;
+  padding: 16px;
+  height: 60%;
+  width: 60%;
 }
 
-
-.application_box {
-  margin-bottom: 3%;
+.application_box1 {
+  margin-top: 20px;
+  margin-bottom: auto;
   width: 100%;
   display: inline-block;
-
 }
 
-#facebookmessenger{
+.application_box2 {
+  margin-bottom: 30px;
+  width: 100%;
+  display: inline-block;
+}
+
+#facebook, #phone, #whatsapp, #slack, #wechat, #email{
   background: white;
-  color: black;
+  color: var(--gold);
   width: 250px;
   float: left;
-  margin-left: 30%;
   width: 150px;
   height: 75px;
-  border: 3px solid var(--medium-orange);
+  border: 2px solid var(--gold);
+  font-size: 14px;
+  font-family: 'Avenir';
 }
 
-#phone{
-  background: white;
-  color: black;
-  width: 250px;
-  margin-left: 2%;
-  float: left;
-  width: 150px;
-  height: 75px;
-  border: 3px solid var(--medium-orange);
+#facebook, #slack {
+  margin-left: 30%; 
 }
-#Whatsapp{
-  background-color: white;
-  color: black;
-  width: 250px;
+
+#phone, #whatsapp, #wechat, #email{
   margin-left: 2%;
-  float: left;
-  width: 150px;
-  height: 75px;
-  border: 3px solid var(--medium-orange);
-}
-#Slack{
-  background-color: white;
-  color: black;
-  width: 250px;
-  margin-left: 30%;
-  float: left;
-  width: 150px;
-  height: 75px;
-  border: 3px solid var(--medium-orange);
-}
-#Wechat{
-  background-color: white;
-  color: black;
-  width: 250px;
-  margin-left: 2%;
-  float: left;
-  width: 150px;
-  height: 75px;
-  border: 3px solid var(--medium-orange);
-}
-#email{
-  background-color: white;
-  color: black;
-  width: 250px;
-  margin-left: 2%;
-  float: left;
-  width: 150px;
-  height: 75px;
-  border: 3px solid var(--medium-orange);
 }
