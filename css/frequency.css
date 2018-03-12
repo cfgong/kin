@@ -27,12 +27,12 @@ body {
 
 .back-layer-1 {
   /* margin-bottom: 5%; */
-  background-color: #f2f2f2;;
+  background-color: #F5F5F5;;
 
 }
 
 .back-layer-2 {
-  background-color: #f2f2f2; /*should be a darker grye*/
+  background-color: (var--light-gray); /*should be a darker grye*/
   border: 1px solid black;
   /* color: white; */
   width: 70%;
@@ -55,12 +55,12 @@ body {
 
 .frequency-opt {
   display: inline;
-  border: 1px solid var(--dark-orange);
+  border: 1px solid var(--gold);
   font-size: 16px;
   padding: 5px;
   font-family: 'Avenir';
   background-color: white; /*ECEFF1*/
-  color: var(--dark-orange);
+  color: var(--gold);
 }
 .frequency-opt-row {
   /* float: right; */
@@ -70,13 +70,12 @@ body {
 }
 
 .group-frequency {
-  color: var(--black);
-  background-color: var(--gray);
+  background-color: var(--off-white);
   /* margin: 20px; */
   font-size: 16px;
   text-align: right;
   border: 1px solid #f2f2f2;
-  padding: 30px;
+  padding: 20px;
 
 }
 .individual-frequency {
@@ -84,7 +83,7 @@ body {
   font-size: 16px;
   text-align: right;
   border: 1px solid #f2f2f2;
-  padding: 30px;
+  padding: 16px;
   background-color: white;
   /* float: right; */
 }
