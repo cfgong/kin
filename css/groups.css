@@ -54,14 +54,16 @@ div.group {
 
 button.addButton{
   text-decoration: none;
-  background-color: white;
+  background-color: var(--offwhite);
   border: none;
   margin:auto;
   display: block;
+  width: 100%;
+
 }
 
 .material-icons {
-    color: var(--gray)
+    color: var(--light-gray)
 }
 
 div.person{
