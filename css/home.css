@@ -100,7 +100,7 @@ body {
   border: 1px solid var(--light-gray);
 }
 #mynetwork {
-  width: 800px;
+  width: 1400px;
   height: 600px;
   border: 1px solid var(--light-gray);
   margin-left: 50px;
@@ -110,13 +110,13 @@ body {
 
 
 .network-display {
-  height: 200px;
-  width: 260px;
+  height: 600px;
+  width: 350px;
   border: 1px solid var(--light-gray);
-  margin-right: 160px;
+  margin-right: 50px;
 
   background-color: white;
-  margin-top: 200px;
+  /* margin-top: 200px; */
   float: right;
 }
 #mynetwork, .network-display {
