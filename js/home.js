@@ -157,7 +157,7 @@ function init(){
     document.getElementById("info").addEventListener("mouseout", mouseOut);
 };
 
-function addPerson(i, labelStr){
+function addUpcomingPerson(i){
   var group = document.createElement("div");
   group.setAttribute('class', "group");
   var groupId = "group"+i;
@@ -167,7 +167,8 @@ function addPerson(i, labelStr){
 
   groupStatus= document.createElement("span");
   groupStatus.setAttribute("class", "status");
-  groupStatus.innerHTML = labelStr;
+  groupStatus.setAttribute("class", "upcomingtext");
+  groupStatus.innerHTML = "UPCOMING";
   group.append(groupStatus);
 
   groupDays= document.createElement("span");
@@ -192,8 +193,38 @@ function addPerson(i, labelStr){
   return groupId;
 }
 function addOverduePerson(i){
-    var groupId = addPerson(i, "OVERDUE");
-    var group = document.getElementById(groupId);
+    var group = document.createElement("div");
+    group.setAttribute('class', "group");
+    var groupId = "group"+i;
+    group.setAttribute('id', groupId);
+    document.getElementById("groups").append(group);
+    //adding the status bar
+
+    groupStatus= document.createElement("span");
+    groupStatus.setAttribute("class", "status");
+    groupStatus.setAttribute("class", "overduetext");
+    groupStatus.innerHTML = "OVERDUE";
+    group.append(groupStatus);
+
+    groupDays= document.createElement("span");
+    groupDays.setAttribute("class", "days");
+    groupDays.innerHTML = days[i]+" days";
+    group.append(groupDays);
+
+    //adding an image
+    img = document.createElement("img");
+    img.setAttribute("src", images[i]);
+    img.setAttribute("class", "proPic");
+    group.append(img);
+    //group.innerHTML+="<br>";
+
+    //group title
+    groupTitle = document.createElement("DIV");
+    groupTitle.setAttribute("class", "groupTitle");
+    groupTitleId = "groupTitle"+i;
+    groupTitle.setAttribute("id", groupTitleId);
+    groupTitle.innerHTML = people[i];
+    group.append(groupTitle);
     //adding a remove person button
     var removeButton = document.createElement("BUTTON");
     //removeButton.innerHTML =  "Remove";
@@ -243,9 +274,6 @@ function addOverduePerson(i){
     group.appendChild(removeButton);
 
 
-}
-function addUpcomingPerson(i){
-    var groupId = addPerson(i, "UPCOMING");
 }
 
 function contactGroup(elementId, i){
