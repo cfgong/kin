@@ -11,15 +11,24 @@ div.group{
     margin: 3px;
     height: 200px;
 }
-.group .tooltiptext {
+.tooltiptext {
   visibility: hidden;
-  /* Position the tooltip */
+  /**Position the tooltip */
   position: absolute;
   z-index: 2;
+  background-color: white;
+  float: right;
+}
+.tooltiptext button{
+  display: block;
+}
+.tooltiptext button:hover{
+  background-color: var(--light-gray);
 }
 
-.group:hover .tooltiptext {
-  visibility: visible;
+.postponeButton{
+  cursor: pointer;
+  float: right;
 }
 
 span.days{
