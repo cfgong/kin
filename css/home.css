@@ -4,7 +4,7 @@
 /*STATUS BAR*/
 div.group{
     border: solid 1px;
-    border-color: var(--black);
+    border-color: var(--light-gray);
     display: inline-block;
     width: 150px;
     vertical-align: top;
@@ -40,6 +40,8 @@ body {
     float: right;
     width: 630px;
     height: 210px;
+    margin-right: 60px;
+    margin-top: 15px;
     background-color: white;
 }
 .groupTitle{
@@ -61,7 +63,7 @@ body {
 .healthBarClass {
   display: inline-block;
   /* float: left; */
-  border: 1px solid var(--blue-black);
+  border: 1px solid var(--offwhite);
   width: 35%;
   height: 210px;
   margin-left: 50px;
@@ -85,26 +87,35 @@ body {
   float: left;
   margin-left: 25px;
   margin-top: 20px;
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Avenir'
 /* >>>>>>> 998e964f983fd840e1d55bea2efe631ec4b75f6d */
 }
-
+#edit-groups{
+  margin-left: 50px;
+  margin-top: 50px;
+  /* font-family: 'Avenir'; */
+  font-size: 14px;
+  border: 1px solid var(--light-gray);
+}
 #mynetwork {
   width: 800px;
   height: 600px;
-  border: 1px solid var(--blue-gray);
+  border: 1px solid var(--light-gray);
   margin-left: 50px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  background-color: white;
 }
 
 
 .network-display {
-  height: 600px;
-  width: 450px;
-  border: 1px solid var(--blue-gray);
-  margin-right: 60px;
-  margin-top: 50px;
+  height: 200px;
+  width: 260px;
+  border: 1px solid var(--light-gray);
+  margin-right: 160px;
+
+  background-color: white;
+  margin-top: 200px;
   float: right;
 }
 #mynetwork, .network-display {
@@ -112,19 +123,19 @@ body {
 }
 
 #name {
-  font-size: 36px;
+  font-size: 16px;
   font-weight: bold;
   margin-left: 10px;
-  margin-top: 10px;
-  color: var(--blue-black);
+  margin-top: 17%;
+  color: var(--black);
   font-family: 'Nunito'
 }
 
 #inputName {
-  font-size: 36px;
+  font-size: 16px;
   margin-left: 10px;
   margin-top: 10px;
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 
@@ -133,18 +144,18 @@ body {
 }
 
 #group {
-  font-size: 36px;
+  font-size: 16px;
   font-weight: bold;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 #inputGroup {
-  font-size: 36px;
+  font-size: 16px;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 
@@ -153,18 +164,18 @@ body {
 }
 
 #frequency {
-  font-size: 36px;
+  font-size: 16px;
   font-weight: bold;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 #inputFrequency {
-  font-size: 36px;
+  font-size: 16px;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 
@@ -173,18 +184,18 @@ body {
 }
 
 #health {
-  font-size: 36px;
+  font-size: 16px;
   font-weight: bold;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 #inputHealth {
-  font-size: 36px;
+  font-size: 16px;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 
@@ -193,18 +204,18 @@ body {
 }
 
 #contact {
-  font-size: 36px;
+  font-size: 16px;
   font-weight: bold;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 #inputContact {
-  font-size: 36px;
+  font-size: 16px;
   margin-left: 10px;
   /* margin-top: 10px; */
-  color: var(--blue-black);
+  color: var(--black);
   font-family: 'Nunito'
 }
 
