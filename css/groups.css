@@ -13,7 +13,7 @@
 }
 
 div.group {
-    border: 1px solid ;
+    /* border: 1px solid ; */
     display: inline-block;
     vertical-align: top;
     margin: 5px;
@@ -54,14 +54,17 @@ div.group {
 
 button.addButton{
   text-decoration: none;
-  background-color: white;
+  background-color: var(--offwhite);
   border: none;
   margin:auto;
   display: block;
+  width: 100%;
+  border: 1px solid gray;
+
 }
 
 .material-icons {
-    color: var(--gray)
+    color: var(--light-gray)
 }
 
 div.person{
@@ -84,6 +87,7 @@ div.person{
     width: 80%;
     margin: 2px 10px;
     height: 30px;
+    /* border: 1px solid gray; */
 }
 
 .groupTitle{
