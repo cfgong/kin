@@ -129,20 +129,21 @@ body {
   margin-left: 10px;
   margin-top: 17%;
   color: var(--black);
-  font-family: 'Nunito'
+  font-family: 'Avenir'
 }
 
 #inputName {
   font-size: 16px;
   margin-left: 10px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   color: var(--black);
-  font-family: 'Nunito'
+  font-family: 'Avenir'
 }
 
-#name, #inputName {
+/* #name, #inputName {
   display: inline-block;
-}
+  /* margin-top: 20px; */
+/* } */
 
 #group {
   font-size: 16px;
@@ -150,19 +151,20 @@ body {
   margin-left: 10px;
   /* margin-top: 10px; */
   color: var(--black);
-  font-family: 'Nunito'
+  font-family: 'Avenir'
 }
 #inputGroup {
   font-size: 16px;
   margin-left: 10px;
   /* margin-top: 10px; */
   color: var(--black);
-  font-family: 'Nunito'
+  font-family: 'Avenir'
 }
 
-#group, #inputGroup {
+/* #group, #inputGroup {
   display: inline;
-}
+  margin-top: 30px;
+} */
 
 #frequency {
   font-size: 16px;
@@ -170,19 +172,20 @@ body {
   margin-left: 10px;
   /* margin-top: 10px; */
   color: var(--black);
-  font-family: 'Nunito'
+  font-family: 'Avenir'
 }
 #inputFrequency {
   font-size: 16px;
   margin-left: 10px;
   /* margin-top: 10px; */
   color: var(--black);
-  font-family: 'Nunito'
+  font-family: 'Avenir'
 }
 
-#frequency, #inputFrequency {
+/* #frequency, #inputFrequency {
   display: inline;
-}
+  margin-top: 30px;
+} */
 
 #health {
   font-size: 16px;
@@ -190,19 +193,20 @@ body {
   margin-left: 10px;
   /* margin-top: 10px; */
   color: var(--black);
-  font-family: 'Nunito'
+  font-family: 'Avenir'
 }
 #inputHealth {
   font-size: 16px;
   margin-left: 10px;
   /* margin-top: 10px; */
   color: var(--black);
-  font-family: 'Nunito'
+  font-family: 'Avenir'
 }
 
-#health, #inputHealth {
+/* #health, #inputHealth {
   display: inline;
-}
+  margin-top: 30px;
+} */
 
 #contact {
   font-size: 16px;
@@ -210,16 +214,17 @@ body {
   margin-left: 10px;
   /* margin-top: 10px; */
   color: var(--black);
-  font-family: 'Nunito'
+  font-family: 'Avenir'
 }
 #inputContact {
   font-size: 16px;
   margin-left: 10px;
   /* margin-top: 10px; */
   color: var(--black);
-  font-family: 'Nunito'
+  font-family: 'Avenir'
 }
 
-#contact, #inputContact {
+/* #contact, #inputContact {
   display: inline;
-}
+  margin-top: 30px;
+} */
