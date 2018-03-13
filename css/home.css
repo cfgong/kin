@@ -11,6 +11,17 @@ div.group{
     margin: 3px;
     height: 200px;
 }
+.group .tooltiptext {
+  visibility: hidden;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 2;
+}
+
+.group:hover .tooltiptext {
+  visibility: visible;
+}
+
 span.days{
   float: right;
 }

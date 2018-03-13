@@ -206,6 +206,17 @@ function addOverduePerson(i){
     removeButton.innerHTML =  "<img src ='img/postpone.svg' class = 'svg'><br>Postpone";
     removeButton.onclick = function(){postponeGroup(groupId, lastPerson, false);}
     group.appendChild(removeButton);
+
+      tooltip = document.createElement("DIV");
+  tooltip.setAttribute("class", "tooltiptext");
+  group.innerHTML = ` <button onClick={() => this.addType(0)}> Add Source </button>
+        <div>
+          <input type="text" placeholder="Source Name" name="name" />
+          <input type="text" placeholder="Source Link" name="link" />
+        </div>
+        <button onClick={() => this.addType(1)}> Remove </button>
+      </span>`;
+  group.append(tooltip);
 }
 function addUpcomingPerson(i){
     var groupId = addPerson(i, "UPCOMING");
