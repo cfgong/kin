@@ -252,25 +252,35 @@ body {
   font-family: 'Avenir'
 }
 #edit-groups{
-  margin-left: 67.25%;
-  float: left;
-  /* margin-top: 50px; */
+  /* margin-left: 10%; */
+  position: relative;
+  /* float: left; */
+  margin-left: 841px;
+  background-color: var(--medium-orange);
+  color: white;
   font-family: 'Avenir';
   font-size: 14px;
   border: 1px solid var(--light-gray);
 }
 
 #details-name {
-  /* margin-left: 80%; */
-  float: right;
-  margin-right: 19%;
-  /* margin-top: 50px; */
+  /* float: right; */
+  /* margin-right: 19%; */
+  position: relative;
+  margin-left: 45px;
   font-family: 'Avenir';
   font-size: 16px;
 
 }
 
-#edit-groups, #details-name {
+#network-name {
+  position: relative;
+  float: left;
+  margin-left: 50px;
+  /* padding-right: 100px; */
+}
+
+#edit-groups, #details-name, #network-name {
   display: inline-block;
   margin-top: 50px;
 }
