@@ -232,10 +232,10 @@ function addOverduePerson(i){
     removeButton.onclick = function(){contactGroup(groupId, lastPerson);}
     group.appendChild(removeButton);
 
-    //adding a postpone button    
+    //adding a postpone button
     var removeButton = document.createElement("span");
     removeButton.setAttribute("class", "postponeButton");
-    
+
     var postponeButton = document.createElement("BUTTON");
     //removeButton.innerHTML =  "Remove";
     postponeButton.innerHTML =  "<i class = 'material-icons' class='svg'>access_time</i> <br> Postpone";
@@ -270,7 +270,7 @@ function addOverduePerson(i){
 
     removeButton.append(tooltip);
     postponeButton.onclick = function(){postponeGroup(groupId, lastPerson, tooltipId);}
-    
+
     group.appendChild(removeButton);
 
 
@@ -279,11 +279,11 @@ function addOverduePerson(i){
 function contactGroup(elementId, i){
     element = document.getElementById(elementId);
     element.remove(elementId);
-    
+
     var currHealth =parseInt(document.getElementById("friendHealth").style.width);
     var newHealth = currHealth + 5+"%";
     document.getElementById("friendHealth").style.width = newHealth;
-    
+
     lastPerson++;
     addUpcomingPerson(lastPerson);
 }
@@ -297,11 +297,11 @@ function postponeGroup(elementId, i, tooltipId){
     element = document.getElementById(elementId);
     //toggle visibility
     if (document.getElementById(tooltipId).style.visibility=='hidden'){
-        document.getElementById(tooltipId).style.visibility = 'visible'; 
+        document.getElementById(tooltipId).style.visibility = 'visible';
     }else{
-      document.getElementById(tooltipId).style.visibility = 'hidden'; 
+      document.getElementById(tooltipId).style.visibility = 'hidden';
     }
-    
+
 }
 
 function mouseOver() {
@@ -311,7 +311,7 @@ function mouseOver() {
 }
 
 function mouseOut() {
-    document.getElementById("info").style.color = "black";
+    document.getElementById("info").style.color = "gray";
 }
 
 init();
