@@ -157,7 +157,7 @@ function init(){
     document.getElementById("info").addEventListener("mouseout", mouseOut);
 };
 
-function addPerson(i, labelStr){
+function addUpcomingPerson(i){
   var group = document.createElement("div");
   group.setAttribute('class', "group");
   var groupId = "group"+i;
@@ -167,7 +167,8 @@ function addPerson(i, labelStr){
 
   groupStatus= document.createElement("span");
   groupStatus.setAttribute("class", "status");
-  groupStatus.innerHTML = labelStr;
+  groupStatus.setAttribute("class", "upcomingtext");
+  groupStatus.innerHTML = "UPCOMING";
   group.append(groupStatus);
 
   groupDays= document.createElement("span");
@@ -192,41 +193,115 @@ function addPerson(i, labelStr){
   return groupId;
 }
 function addOverduePerson(i){
-    var groupId = addPerson(i, "OVERDUE");
-    var group = document.getElementById(groupId);
+    var group = document.createElement("div");
+    group.setAttribute('class', "group");
+    var groupId = "group"+i;
+    group.setAttribute('id', groupId);
+    document.getElementById("groups").append(group);
+    //adding the status bar
+
+    groupStatus= document.createElement("span");
+    groupStatus.setAttribute("class", "status");
+    groupStatus.setAttribute("class", "overduetext");
+    groupStatus.innerHTML = "OVERDUE";
+    group.append(groupStatus);
+
+    groupDays= document.createElement("span");
+    groupDays.setAttribute("class", "days");
+    groupDays.innerHTML = days[i]+" days";
+    group.append(groupDays);
+
+    //adding an image
+    img = document.createElement("img");
+    img.setAttribute("src", images[i]);
+    img.setAttribute("class", "proPic");
+    group.append(img);
+    //group.innerHTML+="<br>";
+
+    //group title
+    groupTitle = document.createElement("DIV");
+    groupTitle.setAttribute("class", "groupTitle");
+    groupTitleId = "groupTitle"+i;
+    groupTitle.setAttribute("id", groupTitleId);
+    groupTitle.innerHTML = people[i];
+    group.append(groupTitle);
     //adding a remove person button
     var removeButton = document.createElement("BUTTON");
     //removeButton.innerHTML =  "Remove";
     removeButton.innerHTML =  "<i class = 'material-icons' class='svg'>check_circle</i> <br> Contacted";
-    removeButton.onclick = function(){removeGroup(groupId, lastPerson, true);}
+    removeButton.onclick = function(){contactGroup(groupId, lastPerson);}
     group.appendChild(removeButton);
 
     //adding a postpone button
-    var removeButton = document.createElement("BUTTON");
-    removeButton.innerHTML =  "<img src ='img/postpone.svg' class = 'svg'><br>Postpone";
-    removeButton.onclick = function(){postponeGroup(groupId, lastPerson, false);}
+    var removeButton = document.createElement("span");
+    removeButton.setAttribute("class", "postponeButton");
+
+    var postponeButton = document.createElement("BUTTON");
+    //removeButton.innerHTML =  "Remove";
+    postponeButton.innerHTML =  "<i class = 'material-icons' class='svg'>access_time</i> <br> Postpone";
+    removeButton.appendChild(postponeButton);
+
+
+    tooltip = document.createElement("div");
+    tooltip.setAttribute("class", "tooltiptext");
+    var tooltipId = groupId + "_tooltip";
+    tooltip.setAttribute("id", tooltipId);
+    tooltip.style.visibility = "hidden";
+
+    button1 = document.createElement("button");
+    button1.innerHTML = "1 Day";
+    button1.onclick = function(){removeGroup(groupId, lastPerson);}
+    tooltip.append(button1);
+
+    button2 = document.createElement("button");
+    button2.innerHTML = "2 Days";
+    button2.onclick = function(){removeGroup(groupId, lastPerson);}
+    tooltip.append(button2);
+
+    button3 = document.createElement("button");
+    button3.innerHTML = "3 Days";
+    button3.onclick = function(){removeGroup(groupId, lastPerson);}
+    tooltip.append(button3);
+
+    button4 = document.createElement("button");
+    button4.innerHTML = "1 Week";
+    button4.onclick = function(){removeGroup(groupId, lastPerson);}
+    tooltip.append(button4);
+
+    removeButton.append(tooltip);
+    postponeButton.onclick = function(){postponeGroup(groupId, lastPerson, tooltipId);}
+
     group.appendChild(removeButton);
-}
-function addUpcomingPerson(i){
-    var groupId = addPerson(i, "UPCOMING");
+
+
 }
 
-function removeGroup(elementId, i, contacted){
+function contactGroup(elementId, i){
     element = document.getElementById(elementId);
     element.remove(elementId);
-    if (contacted){
-      var currHealth =parseInt(document.getElementById("friendHealth").style.width);
-      var newHealth = currHealth + 5+"%";
-      document.getElementById("friendHealth").style.width = newHealth;
-    }
+
+    var currHealth =parseInt(document.getElementById("friendHealth").style.width);
+    var newHealth = currHealth + 5+"%";
+    document.getElementById("friendHealth").style.width = newHealth;
+
     lastPerson++;
     addUpcomingPerson(lastPerson);
-    //<div class="w3-green w3-round-xlarge" id="familybar" style="height:18px;width:75%"></div>
-
 }
-function postponeGroup(elementId, i){
-    prompt('How many days would you like to postpone?', 1);
-    removeGroup(elementId, i);
+function removeGroup(elementId, i){
+    element = document.getElementById(elementId);
+    element.remove(elementId);
+    lastPerson++;
+    addUpcomingPerson(lastPerson);
+}
+function postponeGroup(elementId, i, tooltipId){
+    element = document.getElementById(elementId);
+    //toggle visibility
+    if (document.getElementById(tooltipId).style.visibility=='hidden'){
+        document.getElementById(tooltipId).style.visibility = 'visible';
+    }else{
+      document.getElementById(tooltipId).style.visibility = 'hidden';
+    }
+
 }
 
 function mouseOver() {
@@ -236,7 +311,7 @@ function mouseOver() {
 }
 
 function mouseOut() {
-    document.getElementById("info").style.color = "black";
+    document.getElementById("info").style.color = "gray";
 }
 
 init();
