@@ -106,14 +106,16 @@ body {
 }
 
 #kin {
-  color: var(--offwhite);
+  color: white;
   font-family: 'Avenir';
   /* float: right; */
-  text-align: center;
+  text-align: left;
   padding-top: 25px;
+  margin-left: 45px;
+  font-weight: 500;
   /* margin-top: 55px; */
   /* margin-right: 20px; */
-  font-size: 35px;
+  font-size: 36px;
 }
 
 .proPic{
