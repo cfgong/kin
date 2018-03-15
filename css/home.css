@@ -106,11 +106,13 @@ body {
 }
 
 #kin {
-  color: white;
+  color: var(--offwhite);
   font-family: 'Avenir';
-  float: right;
-  margin-top: 55px;
-  margin-right: 20px;
+  /* float: right; */
+  text-align: center;
+  padding-top: 25px;
+  /* margin-top: 55px; */
+  /* margin-right: 20px; */
   font-size: 35px;
 }
 
