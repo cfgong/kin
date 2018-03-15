@@ -122,7 +122,7 @@ function init(){
         document.getElementById("inputName").innerHTML = "Justin"
         document.getElementById("inputGroup").innerHTML = "High School Pals"
         document.getElementById("inputFrequency").innerHTML = "Monthly"
-        document.getElementById("inputHealth").innerHTML = "Poor"
+        document.getElementById("inputHealth").innerHTML = "Unhealthy"
         document.getElementById("inputContact").innerHTML = "December 4, 2017"
       }else if (ids == 10) {
         document.getElementById("inputName").innerHTML = "Joey"
@@ -140,13 +140,13 @@ function init(){
         document.getElementById("inputName").innerHTML = "Dwight"
         document.getElementById("inputGroup").innerHTML = "Coworkers"
         document.getElementById("inputFrequency").innerHTML = "Biweekly"
-        document.getElementById("inputHealth").innerHTML = "poor"
+        document.getElementById("inputHealth").innerHTML = "Unhealthy"
         document.getElementById("inputContact").innerHTML = "December 19, 2017"
       }else if (ids == 8) {
         document.getElementById("inputName").innerHTML = "Ryan"
         document.getElementById("inputGroup").innerHTML = "High School Pals"
         document.getElementById("inputFrequency").innerHTML = "Monthly"
-        document.getElementById("inputHealth").innerHTML = "Poor"
+        document.getElementById("inputHealth").innerHTML = "Unhealthy"
         document.getElementById("inputContact").innerHTML = "January 1, 2018"
       }
       var clickedNodes = nodes.get(ids);
