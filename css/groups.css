@@ -92,7 +92,7 @@ div.person{
     width: 80%;
     margin: 2px 10px;
     height: 30px;
-    border: 1px var(--gray);
+    border: 10px;
 }
 
 .groupTitle{
@@ -102,7 +102,7 @@ div.person{
     height: 48px;
     display: inline-flex;
     justify-content: center; /* center items horizontally, in this case */
-    width: var(--group_width);
+    width: var(--group_width); 
 }
 
 .groupTitle input {
