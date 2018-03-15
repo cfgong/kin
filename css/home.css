@@ -105,6 +105,15 @@ body {
   text-align: center;
 }
 
+#kin {
+  color: white;
+  font-family: 'Avenir';
+  float: right;
+  margin-top: 55px;
+  margin-right: 20px;
+  font-size: 35px;
+}
+
 .proPic{
     width: 84px;
     height: 84px;
