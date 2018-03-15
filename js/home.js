@@ -26,7 +26,7 @@ function init(){
     var nodes = new vis.DataSet([  //change things here to change things for specific Nodes
       {id: 1, fixed: true, borderWidth: 3, size: 30, color: '#BDBDBD', label: 'Me'},
       {id: 2, color: '#BDBDBD', label: 'Family'},
-      {id: 3, color: '#BDBDBD', label: 'Friends'},
+      {id: 3, color: '#BDBDBD', label: 'High School Pals'},
       {id: 4, color: '#BDBDBD', label: 'Coworkers'},
       {id: 5,  color: '#00C853', label: 'Mom'},
       {id: 6, color: '#FFEB3B', label: 'Dad'},
