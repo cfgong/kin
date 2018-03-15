@@ -18,6 +18,7 @@ div.group{
 .upcomingtext{
   color: var(--sky-blue);
   margin-left: 5px;
+  margin-top: 10px;
 }
 .tooltiptext {
   visibility: hidden;
@@ -70,7 +71,7 @@ button{
 #statusBar{
   margin-top: 20px;
   float: right;
-  margin-right: 60px;
+  margin-right: 48%;
   font-family: 'Avenir';
   color: var(--black);
 }
@@ -293,19 +294,21 @@ body {
   /* margin-left: 10%; */
   position: relative;
   /* float: left; */
-  margin-left: 841px;
+  margin-left: 790px;
+  margin-bottom: 10px;
+  padding: 5px 14px;
   background-color: var(--medium-orange);
+  border-radius: 21px;
   color: white;
   font-family: 'Avenir';
   font-size: 14px;
-  border: 1px solid var(--light-gray);
 }
 
 #details-name {
   /* float: right; */
   /* margin-right: 19%; */
-  position: relative;
-  margin-left: 45px;
+  float: right;
+  margin-right: 19%;
   font-family: 'Avenir';
   font-size: 16px;
 
@@ -331,7 +334,10 @@ body {
   border-top: 1px solid gray;
   margin-top: 90px;
   margin-left: 9%;
+}
 
+.material-icons {
+    color: #757575;
 }
 /* #contact, #inputContact {
   display: inline;
