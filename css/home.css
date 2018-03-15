@@ -75,7 +75,7 @@ button{
   color: var(--black);
 }
 #top-color {
-  height: 100px;
+  height: 80px;
   background-color: var(--dark-orange);
 }
 #healthBar, #statusBar {
@@ -110,7 +110,7 @@ body {
   font-family: 'Avenir';
   /* float: right; */
   text-align: left;
-  padding-top: 25px;
+  padding-top: 15px;
   margin-left: 45px;
   font-weight: 500;
   /* margin-top: 55px; */
