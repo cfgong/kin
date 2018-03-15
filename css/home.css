@@ -18,7 +18,6 @@ div.group{
 .upcomingtext{
   color: var(--sky-blue);
   margin-left: 5px;
-  margin-top: 10px;
 }
 .tooltiptext {
   visibility: hidden;
