@@ -516,7 +516,7 @@ div.vis-color-picker input.vis-saturation-range {
 }*/
 div.vis-network div.vis-manipulation {
   box-sizing: content-box;
-
+  margin-bottom: 20px;
   border-width: 0;
   border-bottom: 1px;
   border-style:solid;
