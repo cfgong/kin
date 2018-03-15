@@ -70,7 +70,7 @@ button{
 #statusBar{
   margin-top: 20px;
   float: right;
-  margin-right: 48%;
+  margin-right: 50%;
   font-family: 'Avenir';
   color: var(--black);
 }
@@ -293,7 +293,7 @@ body {
   /* margin-left: 10%; */
   position: relative;
   /* float: left; */
-  margin-left: 790px;
+  margin-left: 57%;
   margin-bottom: 10px;
   padding: 5px 14px;
   background-color: var(--medium-orange);
