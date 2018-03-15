@@ -19,9 +19,9 @@
                 <text id="Semi-healthy" font-family="Avenir-Book, Avenir" font-size="14" font-weight="normal" fill="#212328">
                     <tspan x="24" y="76">Semi-healthy</tspan>
                 </text>
-                <circle id="Oval-3" fill="#FFEB3B" cx="7.5" cy="99.5" r="6.5"></circle>
+                <circle id="Oval-3" fill="#FFC107" cx="7.5" cy="99.5" r="6.5"></circle>
                 <circle id="Oval-3" fill="#00C853" cx="7.5" cy="41.5" r="6.5"></circle>
-                <circle id="Oval-3" fill="#FFB300" cx="7.5" cy="70.5" r="6.5"></circle>
+                <circle id="Oval-3" fill="#FFEB3B" cx="7.5" cy="70.5" r="6.5"></circle>
             </g>
         </g>
     </g>

@@ -16,7 +16,6 @@ function addGroupButton(){
 }
 function addGroup(){
     var elementId = "group-"+groupId;
-
     var group = document.createElement("div");
     group.setAttribute('class', "group");
     group.setAttribute('id', elementId);
