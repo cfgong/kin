@@ -16,6 +16,7 @@ function addGroupButton(){
 }
 function addGroup(){
     var elementId = "group-"+groupId;
+
     var group = document.createElement("div");
     group.setAttribute('class', "group");
     group.setAttribute('id', elementId);
@@ -30,7 +31,7 @@ function addGroup(){
     groupTitleId = elementId+"-groupTitle";
     groupTitle.setAttribute("id", groupTitleId);
     group.append(groupTitle);
-    addTextField(groupTitleId, "Group Name ");
+    addTextField(groupTitleId, "Add a Group Name ");
 
     var removeButton = document.createElement("IMG");
     removeButton.setAttribute("class", "removeButton");

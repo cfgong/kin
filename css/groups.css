@@ -110,6 +110,10 @@ div.person{
     border: none;
 }
 
+.groupTitle input::placeholder {
+    color: #FFECB3;
+}
+
 .person input {
   border: 1px solid var(--light-gray);
 }
