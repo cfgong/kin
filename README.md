@@ -2,7 +2,6 @@
 *A Web Application UI to help people maintain and strengthen their social relationships.*
 
 ### Overview
-_How might we enable people to maintain and strengthen their social relationships?_
 #### Features
 * Create relationship-type categories
 * Add people to categories 
