@@ -1,7 +1,5 @@
 # [Kin](https://cfgong.github.io/kin/login.html)
 *A Web Application UI to help people maintain and strengthen their social relationships.*
-
-### Captures of the Site
 ![test](https://github.com/cfgong/kin/blob/master/img/demo0.png)
 ![test](https://github.com/cfgong/kin/blob/master/img/demo1.png)
 ![test](https://github.com/cfgong/kin/blob/master/img/demo2.png)
