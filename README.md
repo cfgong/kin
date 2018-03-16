@@ -25,3 +25,10 @@
 * Young adults ranging from 22 to 30 years old
 * Relatively technology savvy
 
+### Captures of the Site
+![test](https://github.com/cfgong/kin/blob/master/img/demo0.png)
+![test](https://github.com/cfgong/kin/blob/master/img/demo1.png)
+![test](https://github.com/cfgong/kin/blob/master/img/demo2.png)
+![test](https://github.com/cfgong/kin/blob/master/img/demo3.png)
+![test](https://github.com/cfgong/kin/blob/master/img/demo4.png)
+![test](https://github.com/cfgong/kin/blob/master/img/demo5.png)
